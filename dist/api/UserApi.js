@@ -11,9 +11,9 @@
  *
  */
 import ApiClient from "../ApiClient";
+import Error from '../model/Error';
+import User from '../model/User';
 import UsersPostRequestBody from '../model/UsersPostRequestBody';
-import XComponentsresponsesUsersPostBadRequest from '../model/XComponentsresponsesUsersPostBadRequest';
-import XComponentsresponsesUsersPostOk from '../model/XComponentsresponsesUsersPostOk';
 /**
 * User service.
 * @module api/UserApi
@@ -35,7 +35,7 @@ export default class UserApi {
    * Create a user
    * 
    * @param {module:model/UsersPostRequestBody} usersPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesUsersPostOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
    */
 
 
@@ -53,14 +53,14 @@ export default class UserApi {
     let authNames = [];
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesUsersPostOk;
+    let returnType = User;
     return this.apiClient.callApi('/users', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Create a user
    * 
    * @param {module:model/UsersPostRequestBody} usersPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesUsersPostOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
    */
 
 

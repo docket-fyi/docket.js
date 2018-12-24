@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="docsGet"></a>
 # **docsGet**
-> XComponentsresponsesDocsGetOk docsGet()
+> Object docsGet()
 
 Returns an OpenAPI 3.0 spec.
 
@@ -33,7 +33,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**XComponentsresponsesDocsGetOk**](XComponentsresponsesDocsGetOk.md)
+**Object**
 
 ### Authorization
 

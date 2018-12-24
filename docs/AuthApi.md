@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="authPost"></a>
 # **authPost**
-> XComponentsresponsesAuthPostOk authPost(authPostRequestBody)
+> InlineResponse200 authPost(authPostRequestBody)
 
 Issues a JWT
 
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**XComponentsresponsesAuthPostOk**](XComponentsresponsesAuthPostOk.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

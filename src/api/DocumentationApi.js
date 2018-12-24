@@ -13,7 +13,6 @@
 
 
 import ApiClient from "../ApiClient";
-import XComponentsresponsesDocsGetOk from '../model/XComponentsresponsesDocsGetOk';
 
 /**
 * Documentation service.
@@ -38,7 +37,7 @@ export default class DocumentationApi {
     /**
      * Returns an OpenAPI 3.0 spec.
      * Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesDocsGetOk} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object} and HTTP response
      */
     docsGetWithHttpInfo() {
       let postBody = null;
@@ -56,7 +55,7 @@ export default class DocumentationApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = XComponentsresponsesDocsGetOk;
+      let returnType = Object;
 
       return this.apiClient.callApi(
         '/docs', 'GET',
@@ -68,7 +67,7 @@ export default class DocumentationApi {
     /**
      * Returns an OpenAPI 3.0 spec.
      * Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesDocsGetOk}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object}
      */
     docsGet() {
       return this.docsGetWithHttpInfo();

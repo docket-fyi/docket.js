@@ -11,22 +11,12 @@
  *
  */
 import ApiClient from "../ApiClient";
+import Error from '../model/Error';
+import Event from '../model/Event';
 import MeEventPutRequestBody from '../model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from '../model/MeEventsPostRequestBody';
 import MePutRequestBody from '../model/MePutRequestBody';
-import XComponentsresponsesMeDeleteNotFound from '../model/XComponentsresponsesMeDeleteNotFound';
-import XComponentsresponsesMeEventDeleteNotFound from '../model/XComponentsresponsesMeEventDeleteNotFound';
-import XComponentsresponsesMeEventPutNotFound from '../model/XComponentsresponsesMeEventPutNotFound';
-import XComponentsresponsesMeEventPutOk from '../model/XComponentsresponsesMeEventPutOk';
-import XComponentsresponsesMeEventsGetNotFound from '../model/XComponentsresponsesMeEventsGetNotFound';
-import XComponentsresponsesMeEventsGetOk from '../model/XComponentsresponsesMeEventsGetOk';
-import XComponentsresponsesMeEventsPostNotFound from '../model/XComponentsresponsesMeEventsPostNotFound';
-import XComponentsresponsesMeEventsPostOk from '../model/XComponentsresponsesMeEventsPostOk';
-import XComponentsresponsesMeGetNotFound from '../model/XComponentsresponsesMeGetNotFound';
-import XComponentsresponsesMeGetOk from '../model/XComponentsresponsesMeGetOk';
-import XComponentsresponsesMePutBadRequest from '../model/XComponentsresponsesMePutBadRequest';
-import XComponentsresponsesMePutNotFound from '../model/XComponentsresponsesMePutNotFound';
-import XComponentsresponsesMePutOk from '../model/XComponentsresponsesMePutOk';
+import User from '../model/User';
 /**
 * Me service.
 * @module api/MeApi
@@ -79,7 +69,7 @@ export default class MeApi {
   /**
    * Fetches all events for the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesMeEventsGetOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
    */
 
 
@@ -92,13 +82,13 @@ export default class MeApi {
     let authNames = ['bearerAuth'];
     let contentTypes = [];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesMeEventsGetOk;
+    let returnType = [Event];
     return this.apiClient.callApi('/me/events', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Fetches all events for the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesMeEventsGetOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
    */
 
 
@@ -154,7 +144,7 @@ export default class MeApi {
    * 
    * @param {String} id 
    * @param {module:model/MeEventPutRequestBody} meEventPutRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesMeEventPutOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
    */
 
 
@@ -179,7 +169,7 @@ export default class MeApi {
     let authNames = ['bearerAuth'];
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesMeEventPutOk;
+    let returnType = Event;
     return this.apiClient.callApi('/me/events/{id}', 'PUT', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
@@ -187,7 +177,7 @@ export default class MeApi {
    * 
    * @param {String} id 
    * @param {module:model/MeEventPutRequestBody} meEventPutRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesMeEventPutOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
    */
 
 
@@ -201,7 +191,7 @@ export default class MeApi {
    * Creates a new event for the current user
    * 
    * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesMeEventsPostOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
    */
 
 
@@ -219,14 +209,14 @@ export default class MeApi {
     let authNames = ['bearerAuth'];
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesMeEventsPostOk;
+    let returnType = Event;
     return this.apiClient.callApi('/me/events', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Creates a new event for the current user
    * 
    * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesMeEventsPostOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
    */
 
 
@@ -239,7 +229,7 @@ export default class MeApi {
   /**
    * Fetches the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesMeGetOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
    */
 
 
@@ -252,13 +242,13 @@ export default class MeApi {
     let authNames = ['bearerAuth'];
     let contentTypes = [];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesMeGetOk;
+    let returnType = User;
     return this.apiClient.callApi('/me', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Fetches the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesMeGetOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
    */
 
 
@@ -272,7 +262,7 @@ export default class MeApi {
    * Updates the current user
    * 
    * @param {module:model/MePutRequestBody} mePutRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesMePutOk} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
    */
 
 
@@ -290,14 +280,14 @@ export default class MeApi {
     let authNames = ['bearerAuth'];
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
-    let returnType = XComponentsresponsesMePutOk;
+    let returnType = User;
     return this.apiClient.callApi('/me', 'PUT', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Updates the current user
    * 
    * @param {module:model/MePutRequestBody} mePutRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesMePutOk}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
    */
 
 

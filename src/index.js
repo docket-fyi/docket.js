@@ -16,6 +16,7 @@ import ApiClient from './ApiClient';
 import AuthPostRequestBody from './model/AuthPostRequestBody';
 import Error from './model/Error';
 import Event from './model/Event';
+import InlineResponse200 from './model/InlineResponse200';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
@@ -83,6 +84,12 @@ export {
      * @property {module:model/Event}
      */
     Event,
+
+    /**
+     * The InlineResponse200 model constructor.
+     * @property {module:model/InlineResponse200}
+     */
+    InlineResponse200,
 
     /**
      * The MeEventPutRequestBody model constructor.

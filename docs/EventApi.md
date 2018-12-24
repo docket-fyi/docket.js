@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="meEventsGet"></a>
 # **meEventsGet**
-> XComponentsresponsesMeEventsGetOk meEventsGet()
+> [Event] meEventsGet()
 
 Fetches all events for the current user
 
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**XComponentsresponsesMeEventsGetOk**](XComponentsresponsesMeEventsGetOk.md)
+[**[Event]**](Event.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ null (empty response body)
 
 <a name="meEventsIdPut"></a>
 # **meEventsIdPut**
-> XComponentsresponsesMeEventPutOk meEventsIdPut(id, meEventPutRequestBody)
+> Event meEventsIdPut(id, meEventPutRequestBody)
 
 Updates an event for the current user
 
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**XComponentsresponsesMeEventPutOk**](XComponentsresponsesMeEventPutOk.md)
+[**Event**](Event.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 <a name="meEventsPost"></a>
 # **meEventsPost**
-> XComponentsresponsesMeEventsPostOk meEventsPost(meEventsPostRequestBody)
+> Event meEventsPost(meEventsPostRequestBody)
 
 Creates a new event for the current user
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**XComponentsresponsesMeEventsPostOk**](XComponentsresponsesMeEventsPostOk.md)
+[**Event**](Event.md)
 
 ### Authorization
 

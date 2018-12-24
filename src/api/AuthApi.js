@@ -14,8 +14,8 @@
 
 import ApiClient from "../ApiClient";
 import AuthPostRequestBody from '../model/AuthPostRequestBody';
-import XComponentsresponsesAuthPostBadRequestInvalidLogin from '../model/XComponentsresponsesAuthPostBadRequestInvalidLogin';
-import XComponentsresponsesAuthPostOk from '../model/XComponentsresponsesAuthPostOk';
+import Error from '../model/Error';
+import InlineResponse200 from '../model/InlineResponse200';
 
 /**
 * Auth service.
@@ -41,7 +41,7 @@ export default class AuthApi {
      * Issues a JWT
      * 
      * @param {module:model/AuthPostRequestBody} authPostRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/XComponentsresponsesAuthPostOk} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse200} and HTTP response
      */
     authPostWithHttpInfo(authPostRequestBody) {
       let postBody = authPostRequestBody;
@@ -64,7 +64,7 @@ export default class AuthApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = XComponentsresponsesAuthPostOk;
+      let returnType = InlineResponse200;
 
       return this.apiClient.callApi(
         '/auth', 'POST',
@@ -77,7 +77,7 @@ export default class AuthApi {
      * Issues a JWT
      * 
      * @param {module:model/AuthPostRequestBody} authPostRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/XComponentsresponsesAuthPostOk}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse200}
      */
     authPost(authPostRequestBody) {
       return this.authPostWithHttpInfo(authPostRequestBody);

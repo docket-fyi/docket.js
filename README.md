@@ -110,6 +110,7 @@ Class | Method | HTTP request | Description
  - [@DocketDocketSdk.AuthPostRequestBody](docs/AuthPostRequestBody.md)
  - [@DocketDocketSdk.Error](docs/Error.md)
  - [@DocketDocketSdk.Event](docs/Event.md)
+ - [@DocketDocketSdk.InlineResponse200](docs/InlineResponse200.md)
  - [@DocketDocketSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [@DocketDocketSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)
  - [@DocketDocketSdk.MePutRequestBody](docs/MePutRequestBody.md)

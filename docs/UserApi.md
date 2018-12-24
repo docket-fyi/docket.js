@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="usersPost"></a>
 # **usersPost**
-> XComponentsresponsesUsersPostOk usersPost(usersPostRequestBody)
+> User usersPost(usersPostRequestBody)
 
 Create a user
 
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**XComponentsresponsesUsersPostOk**](XComponentsresponsesUsersPostOk.md)
+[**User**](User.md)
 
 ### Authorization
 
