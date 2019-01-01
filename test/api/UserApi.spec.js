@@ -48,10 +48,10 @@
   }
 
   describe('UserApi', function() {
-    describe('usersPost', function() {
-      it('should call usersPost successfully', function(done) {
-        //uncomment below and update the code to test usersPost
-        //instance.usersPost(function(error) {
+    describe('createUser', function() {
+      it('should call createUser successfully', function(done) {
+        //uncomment below and update the code to test createUser
+        //instance.createUser(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

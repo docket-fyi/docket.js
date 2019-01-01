@@ -74,7 +74,7 @@ var api = new @DocketDocketSdk.AuthApi()
 
 var authPostRequestBody = new @DocketDocketSdk.AuthPostRequestBody(); // {AuthPostRequestBody} 
 
-api.authPost(authPostRequestBody).then(function(data) {
+api.auth(authPostRequestBody).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -89,20 +89,22 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*@DocketDocketSdk.AuthApi* | [**authPost**](docs/AuthApi.md#authPost) | **POST** /auth | Issues a JWT
-*@DocketDocketSdk.DocumentationApi* | [**docsGet**](docs/DocumentationApi.md#docsGet) | **GET** /docs | Returns an OpenAPI 3.0 spec.
-*@DocketDocketSdk.EventApi* | [**meEventsGet**](docs/EventApi.md#meEventsGet) | **GET** /me/events | Fetches all events for the current user
-*@DocketDocketSdk.EventApi* | [**meEventsIdDelete**](docs/EventApi.md#meEventsIdDelete) | **DELETE** /me/events/{id} | Deletes an event for the current user
-*@DocketDocketSdk.EventApi* | [**meEventsIdPut**](docs/EventApi.md#meEventsIdPut) | **PUT** /me/events/{id} | Updates an event for the current user
-*@DocketDocketSdk.EventApi* | [**meEventsPost**](docs/EventApi.md#meEventsPost) | **POST** /me/events | Creates a new event for the current user
-*@DocketDocketSdk.MeApi* | [**meDelete**](docs/MeApi.md#meDelete) | **DELETE** /me | Deletes the current user
-*@DocketDocketSdk.MeApi* | [**meEventsGet**](docs/MeApi.md#meEventsGet) | **GET** /me/events | Fetches all events for the current user
-*@DocketDocketSdk.MeApi* | [**meEventsIdDelete**](docs/MeApi.md#meEventsIdDelete) | **DELETE** /me/events/{id} | Deletes an event for the current user
-*@DocketDocketSdk.MeApi* | [**meEventsIdPut**](docs/MeApi.md#meEventsIdPut) | **PUT** /me/events/{id} | Updates an event for the current user
-*@DocketDocketSdk.MeApi* | [**meEventsPost**](docs/MeApi.md#meEventsPost) | **POST** /me/events | Creates a new event for the current user
-*@DocketDocketSdk.MeApi* | [**meGet**](docs/MeApi.md#meGet) | **GET** /me | Fetches the current user
-*@DocketDocketSdk.MeApi* | [**mePut**](docs/MeApi.md#mePut) | **PUT** /me | Updates the current user
-*@DocketDocketSdk.UserApi* | [**usersPost**](docs/UserApi.md#usersPost) | **POST** /users | Create a user
+*@DocketDocketSdk.AuthApi* | [**auth**](docs/AuthApi.md#auth) | **POST** /auth | Issues a JWT
+*@DocketDocketSdk.DocumentationApi* | [**getDocs**](docs/DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
+*@DocketDocketSdk.EventApi* | [**createMyEvent**](docs/EventApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
+*@DocketDocketSdk.EventApi* | [**deleteMyEventById**](docs/EventApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user
+*@DocketDocketSdk.EventApi* | [**getMyEventById**](docs/EventApi.md#getMyEventById) | **GET** /me/events/{id} | Fetches a specific event for the current user
+*@DocketDocketSdk.EventApi* | [**getMyEvents**](docs/EventApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
+*@DocketDocketSdk.EventApi* | [**updateMyEventById**](docs/EventApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
+*@DocketDocketSdk.MeApi* | [**createMyEvent**](docs/MeApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
+*@DocketDocketSdk.MeApi* | [**deleteMe**](docs/MeApi.md#deleteMe) | **DELETE** /me | Deletes the current user
+*@DocketDocketSdk.MeApi* | [**deleteMyEventById**](docs/MeApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user
+*@DocketDocketSdk.MeApi* | [**getMe**](docs/MeApi.md#getMe) | **GET** /me | Fetches the current user
+*@DocketDocketSdk.MeApi* | [**getMyEventById**](docs/MeApi.md#getMyEventById) | **GET** /me/events/{id} | Fetches a specific event for the current user
+*@DocketDocketSdk.MeApi* | [**getMyEvents**](docs/MeApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
+*@DocketDocketSdk.MeApi* | [**updateMe**](docs/MeApi.md#updateMe) | **PUT** /me | Updates the current user
+*@DocketDocketSdk.MeApi* | [**updateMyEventById**](docs/MeApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
+*@DocketDocketSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
 
 
 ## Documentation for Models

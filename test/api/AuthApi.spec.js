@@ -48,10 +48,10 @@
   }
 
   describe('AuthApi', function() {
-    describe('authPost', function() {
-      it('should call authPost successfully', function(done) {
-        //uncomment below and update the code to test authPost
-        //instance.authPost(function(error) {
+    describe('auth', function() {
+      it('should call auth successfully', function(done) {
+        //uncomment below and update the code to test auth
+        //instance.auth(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

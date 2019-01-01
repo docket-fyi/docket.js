@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authPost**](AuthApi.md#authPost) | **POST** /auth | Issues a JWT
+[**auth**](AuthApi.md#auth) | **POST** /auth | Issues a JWT
 
 
-<a name="authPost"></a>
-# **authPost**
-> InlineResponse200 authPost(authPostRequestBody)
+<a name="auth"></a>
+# **auth**
+> InlineResponse200 auth(authPostRequestBody)
 
 Issues a JWT
 
@@ -23,7 +23,7 @@ let apiInstance = new @DocketDocketSdk.AuthApi();
 
 let authPostRequestBody = new @DocketDocketSdk.AuthPostRequestBody(); // AuthPostRequestBody | 
 
-apiInstance.authPost(authPostRequestBody).then((data) => {
+apiInstance.auth(authPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);

@@ -39,11 +39,11 @@ export default class UserApi {
    */
 
 
-  usersPostWithHttpInfo(usersPostRequestBody) {
+  createUserWithHttpInfo(usersPostRequestBody) {
     let postBody = usersPostRequestBody; // verify the required parameter 'usersPostRequestBody' is set
 
     if (usersPostRequestBody === undefined || usersPostRequestBody === null) {
-      throw new Error("Missing the required parameter 'usersPostRequestBody' when calling usersPost");
+      throw new Error("Missing the required parameter 'usersPostRequestBody' when calling createUser");
     }
 
     let pathParams = {};
@@ -64,8 +64,8 @@ export default class UserApi {
    */
 
 
-  usersPost(usersPostRequestBody) {
-    return this.usersPostWithHttpInfo(usersPostRequestBody);
+  createUser(usersPostRequestBody) {
+    return this.createUserWithHttpInfo(usersPostRequestBody);
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/

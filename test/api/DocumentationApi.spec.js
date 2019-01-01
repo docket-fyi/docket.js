@@ -48,10 +48,10 @@
   }
 
   describe('DocumentationApi', function() {
-    describe('docsGet', function() {
-      it('should call docsGet successfully', function(done) {
-        //uncomment below and update the code to test docsGet
-        //instance.docsGet(function(error) {
+    describe('getDocs', function() {
+      it('should call getDocs successfully', function(done) {
+        //uncomment below and update the code to test getDocs
+        //instance.getDocs(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

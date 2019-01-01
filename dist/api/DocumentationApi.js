@@ -35,7 +35,7 @@ export default class DocumentationApi {
    */
 
 
-  docsGetWithHttpInfo() {
+  getDocsWithHttpInfo() {
     let postBody = null;
     let pathParams = {};
     let queryParams = {};
@@ -54,8 +54,8 @@ export default class DocumentationApi {
    */
 
 
-  docsGet() {
-    return this.docsGetWithHttpInfo();
+  getDocs() {
+    return this.getDocsWithHttpInfo();
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/

@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**usersPost**](UserApi.md#usersPost) | **POST** /users | Create a user
+[**createUser**](UserApi.md#createUser) | **POST** /users | Create a user
 
 
-<a name="usersPost"></a>
-# **usersPost**
-> User usersPost(usersPostRequestBody)
+<a name="createUser"></a>
+# **createUser**
+> User createUser(usersPostRequestBody)
 
 Create a user
 
@@ -23,7 +23,7 @@ let apiInstance = new @DocketDocketSdk.UserApi();
 
 let usersPostRequestBody = new @DocketDocketSdk.UsersPostRequestBody(); // UsersPostRequestBody | 
 
-apiInstance.usersPost(usersPostRequestBody).then((data) => {
+apiInstance.createUser(usersPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);

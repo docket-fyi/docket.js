@@ -33,33 +33,40 @@ export default class EventApi {
     this.apiClient = apiClient || ApiClient.instance;
   }
   /**
-   * Fetches all events for the current user
+   * Creates a new event for the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
+   * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
    */
 
 
-  meEventsGetWithHttpInfo() {
-    let postBody = null;
+  createMyEventWithHttpInfo(meEventsPostRequestBody) {
+    let postBody = meEventsPostRequestBody; // verify the required parameter 'meEventsPostRequestBody' is set
+
+    if (meEventsPostRequestBody === undefined || meEventsPostRequestBody === null) {
+      throw new Error("Missing the required parameter 'meEventsPostRequestBody' when calling createMyEvent");
+    }
+
     let pathParams = {};
     let queryParams = {};
     let headerParams = {};
     let formParams = {};
     let authNames = ['bearerAuth'];
-    let contentTypes = [];
+    let contentTypes = ['application/json'];
     let accepts = ['application/json'];
-    let returnType = [Event];
-    return this.apiClient.callApi('/me/events', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+    let returnType = Event;
+    return this.apiClient.callApi('/me/events', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
-   * Fetches all events for the current user
+   * Creates a new event for the current user
    * 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
+   * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
    */
 
 
-  meEventsGet() {
-    return this.meEventsGetWithHttpInfo();
+  createMyEvent(meEventsPostRequestBody) {
+    return this.createMyEventWithHttpInfo(meEventsPostRequestBody);
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/
@@ -72,11 +79,11 @@ export default class EventApi {
    */
 
 
-  meEventsIdDeleteWithHttpInfo(id) {
+  deleteMyEventByIdWithHttpInfo(id) {
     let postBody = null; // verify the required parameter 'id' is set
 
     if (id === undefined || id === null) {
-      throw new Error("Missing the required parameter 'id' when calling meEventsIdDelete");
+      throw new Error("Missing the required parameter 'id' when calling deleteMyEventById");
     }
 
     let pathParams = {
@@ -99,8 +106,81 @@ export default class EventApi {
    */
 
 
-  meEventsIdDelete(id) {
-    return this.meEventsIdDeleteWithHttpInfo(id);
+  deleteMyEventById(id) {
+    return this.deleteMyEventByIdWithHttpInfo(id);
+    /*.then(function(response_and_data) {
+      return response_and_data.data;
+    });*/
+  }
+  /**
+   * Fetches a specific event for the current user
+   * 
+   * @param {String} id 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
+   */
+
+
+  getMyEventByIdWithHttpInfo(id) {
+    let postBody = null; // verify the required parameter 'id' is set
+
+    if (id === undefined || id === null) {
+      throw new Error("Missing the required parameter 'id' when calling getMyEventById");
+    }
+
+    let pathParams = {
+      'id': id
+    };
+    let queryParams = {};
+    let headerParams = {};
+    let formParams = {};
+    let authNames = ['bearerAuth'];
+    let contentTypes = [];
+    let accepts = ['application/json'];
+    let returnType = Event;
+    return this.apiClient.callApi('/me/events/{id}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+  }
+  /**
+   * Fetches a specific event for the current user
+   * 
+   * @param {String} id 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
+   */
+
+
+  getMyEventById(id) {
+    return this.getMyEventByIdWithHttpInfo(id);
+    /*.then(function(response_and_data) {
+      return response_and_data.data;
+    });*/
+  }
+  /**
+   * Fetches all events for the current user
+   * 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
+   */
+
+
+  getMyEventsWithHttpInfo() {
+    let postBody = null;
+    let pathParams = {};
+    let queryParams = {};
+    let headerParams = {};
+    let formParams = {};
+    let authNames = ['bearerAuth'];
+    let contentTypes = [];
+    let accepts = ['application/json'];
+    let returnType = [Event];
+    return this.apiClient.callApi('/me/events', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+  }
+  /**
+   * Fetches all events for the current user
+   * 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
+   */
+
+
+  getMyEvents() {
+    return this.getMyEventsWithHttpInfo();
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/
@@ -114,16 +194,16 @@ export default class EventApi {
    */
 
 
-  meEventsIdPutWithHttpInfo(id, meEventPutRequestBody) {
+  updateMyEventByIdWithHttpInfo(id, meEventPutRequestBody) {
     let postBody = meEventPutRequestBody; // verify the required parameter 'id' is set
 
     if (id === undefined || id === null) {
-      throw new Error("Missing the required parameter 'id' when calling meEventsIdPut");
+      throw new Error("Missing the required parameter 'id' when calling updateMyEventById");
     } // verify the required parameter 'meEventPutRequestBody' is set
 
 
     if (meEventPutRequestBody === undefined || meEventPutRequestBody === null) {
-      throw new Error("Missing the required parameter 'meEventPutRequestBody' when calling meEventsIdPut");
+      throw new Error("Missing the required parameter 'meEventPutRequestBody' when calling updateMyEventById");
     }
 
     let pathParams = {
@@ -147,47 +227,8 @@ export default class EventApi {
    */
 
 
-  meEventsIdPut(id, meEventPutRequestBody) {
-    return this.meEventsIdPutWithHttpInfo(id, meEventPutRequestBody);
-    /*.then(function(response_and_data) {
-      return response_and_data.data;
-    });*/
-  }
-  /**
-   * Creates a new event for the current user
-   * 
-   * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
-   */
-
-
-  meEventsPostWithHttpInfo(meEventsPostRequestBody) {
-    let postBody = meEventsPostRequestBody; // verify the required parameter 'meEventsPostRequestBody' is set
-
-    if (meEventsPostRequestBody === undefined || meEventsPostRequestBody === null) {
-      throw new Error("Missing the required parameter 'meEventsPostRequestBody' when calling meEventsPost");
-    }
-
-    let pathParams = {};
-    let queryParams = {};
-    let headerParams = {};
-    let formParams = {};
-    let authNames = ['bearerAuth'];
-    let contentTypes = ['application/json'];
-    let accepts = ['application/json'];
-    let returnType = Event;
-    return this.apiClient.callApi('/me/events', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
-  }
-  /**
-   * Creates a new event for the current user
-   * 
-   * @param {module:model/MeEventsPostRequestBody} meEventsPostRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
-   */
-
-
-  meEventsPost(meEventsPostRequestBody) {
-    return this.meEventsPostWithHttpInfo(meEventsPostRequestBody);
+  updateMyEventById(id, meEventPutRequestBody) {
+    return this.updateMyEventByIdWithHttpInfo(id, meEventPutRequestBody);
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/

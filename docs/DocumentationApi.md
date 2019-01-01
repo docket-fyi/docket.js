@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**docsGet**](DocumentationApi.md#docsGet) | **GET** /docs | Returns an OpenAPI 3.0 spec.
+[**getDocs**](DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
 
 
-<a name="docsGet"></a>
-# **docsGet**
-> Object docsGet()
+<a name="getDocs"></a>
+# **getDocs**
+> Object getDocs()
 
 Returns an OpenAPI 3.0 spec.
 
@@ -20,7 +20,7 @@ Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
 import @DocketDocketSdk from '@docket/docket-sdk';
 
 let apiInstance = new @DocketDocketSdk.DocumentationApi();
-apiInstance.docsGet().then((data) => {
+apiInstance.getDocs().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);

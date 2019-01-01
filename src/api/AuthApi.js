@@ -43,12 +43,12 @@ export default class AuthApi {
      * @param {module:model/AuthPostRequestBody} authPostRequestBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse200} and HTTP response
      */
-    authPostWithHttpInfo(authPostRequestBody) {
+    authWithHttpInfo(authPostRequestBody) {
       let postBody = authPostRequestBody;
 
       // verify the required parameter 'authPostRequestBody' is set
       if (authPostRequestBody === undefined || authPostRequestBody === null) {
-        throw new Error("Missing the required parameter 'authPostRequestBody' when calling authPost");
+        throw new Error("Missing the required parameter 'authPostRequestBody' when calling auth");
       }
 
 
@@ -79,8 +79,8 @@ export default class AuthApi {
      * @param {module:model/AuthPostRequestBody} authPostRequestBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse200}
      */
-    authPost(authPostRequestBody) {
-      return this.authPostWithHttpInfo(authPostRequestBody);
+    auth(authPostRequestBody) {
+      return this.authWithHttpInfo(authPostRequestBody);
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/

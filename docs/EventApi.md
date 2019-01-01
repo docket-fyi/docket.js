@@ -4,17 +4,18 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**meEventsGet**](EventApi.md#meEventsGet) | **GET** /me/events | Fetches all events for the current user
-[**meEventsIdDelete**](EventApi.md#meEventsIdDelete) | **DELETE** /me/events/{id} | Deletes an event for the current user
-[**meEventsIdPut**](EventApi.md#meEventsIdPut) | **PUT** /me/events/{id} | Updates an event for the current user
-[**meEventsPost**](EventApi.md#meEventsPost) | **POST** /me/events | Creates a new event for the current user
+[**createMyEvent**](EventApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
+[**deleteMyEventById**](EventApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user
+[**getMyEventById**](EventApi.md#getMyEventById) | **GET** /me/events/{id} | Fetches a specific event for the current user
+[**getMyEvents**](EventApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
+[**updateMyEventById**](EventApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
 
 
-<a name="meEventsGet"></a>
-# **meEventsGet**
-> [Event] meEventsGet()
+<a name="createMyEvent"></a>
+# **createMyEvent**
+> Event createMyEvent(meEventsPostRequestBody)
 
-Fetches all events for the current user
+Creates a new event for the current user
 
 
 
@@ -30,7 +31,10 @@ bearerAuth.apiKey = 'YOUR API KEY';
 //bearerAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new @DocketDocketSdk.EventApi();
-apiInstance.meEventsGet().then((data) => {
+
+let meEventsPostRequestBody = new @DocketDocketSdk.MeEventsPostRequestBody(); // MeEventsPostRequestBody | 
+
+apiInstance.createMyEvent(meEventsPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -39,11 +43,14 @@ apiInstance.meEventsGet().then((data) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **meEventsPostRequestBody** | [**MeEventsPostRequestBody**](MeEventsPostRequestBody.md)|  | 
 
 ### Return type
 
-[**[Event]**](Event.md)
+[**Event**](Event.md)
 
 ### Authorization
 
@@ -51,12 +58,12 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="meEventsIdDelete"></a>
-# **meEventsIdDelete**
-> meEventsIdDelete(id)
+<a name="deleteMyEventById"></a>
+# **deleteMyEventById**
+> deleteMyEventById(id)
 
 Deletes an event for the current user
 
@@ -77,7 +84,7 @@ let apiInstance = new @DocketDocketSdk.EventApi();
 
 let id = "id_example"; // String | 
 
-apiInstance.meEventsIdDelete(id).then(() => {
+apiInstance.deleteMyEventById(id).then(() => {
   console.log('API called successfully.');
 }, (error) => {
   console.error(error);
@@ -104,9 +111,103 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="meEventsIdPut"></a>
-# **meEventsIdPut**
-> Event meEventsIdPut(id, meEventPutRequestBody)
+<a name="getMyEventById"></a>
+# **getMyEventById**
+> Event getMyEventById(id)
+
+Fetches a specific event for the current user
+
+
+
+### Example
+```javascript
+import @DocketDocketSdk from '@docket/docket-sdk';
+let defaultClient = @DocketDocketSdk.ApiClient.instance;
+
+// Configure API key authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new @DocketDocketSdk.EventApi();
+
+let id = "id_example"; // String | 
+
+apiInstance.getMyEventById(id).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+
+### Return type
+
+[**Event**](Event.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getMyEvents"></a>
+# **getMyEvents**
+> [Event] getMyEvents()
+
+Fetches all events for the current user
+
+
+
+### Example
+```javascript
+import @DocketDocketSdk from '@docket/docket-sdk';
+let defaultClient = @DocketDocketSdk.ApiClient.instance;
+
+// Configure API key authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new @DocketDocketSdk.EventApi();
+apiInstance.getMyEvents().then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Event]**](Event.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="updateMyEventById"></a>
+# **updateMyEventById**
+> Event updateMyEventById(id, meEventPutRequestBody)
 
 Updates an event for the current user
 
@@ -129,7 +230,7 @@ let id = "id_example"; // String |
 
 let meEventPutRequestBody = new @DocketDocketSdk.MeEventPutRequestBody(); // MeEventPutRequestBody | 
 
-apiInstance.meEventsIdPut(id, meEventPutRequestBody).then((data) => {
+apiInstance.updateMyEventById(id, meEventPutRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -143,56 +244,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
  **meEventPutRequestBody** | [**MeEventPutRequestBody**](MeEventPutRequestBody.md)|  | 
-
-### Return type
-
-[**Event**](Event.md)
-
-### Authorization
-
-[bearerAuth](../README.md#bearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="meEventsPost"></a>
-# **meEventsPost**
-> Event meEventsPost(meEventsPostRequestBody)
-
-Creates a new event for the current user
-
-
-
-### Example
-```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
-
-// Configure API key authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//bearerAuth.apiKeyPrefix = 'Token';
-
-let apiInstance = new @DocketDocketSdk.EventApi();
-
-let meEventsPostRequestBody = new @DocketDocketSdk.MeEventsPostRequestBody(); // MeEventsPostRequestBody | 
-
-apiInstance.meEventsPost(meEventsPostRequestBody).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **meEventsPostRequestBody** | [**MeEventsPostRequestBody**](MeEventsPostRequestBody.md)|  | 
 
 ### Return type
 

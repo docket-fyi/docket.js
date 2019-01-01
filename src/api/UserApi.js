@@ -43,12 +43,12 @@ export default class UserApi {
      * @param {module:model/UsersPostRequestBody} usersPostRequestBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
-    usersPostWithHttpInfo(usersPostRequestBody) {
+    createUserWithHttpInfo(usersPostRequestBody) {
       let postBody = usersPostRequestBody;
 
       // verify the required parameter 'usersPostRequestBody' is set
       if (usersPostRequestBody === undefined || usersPostRequestBody === null) {
-        throw new Error("Missing the required parameter 'usersPostRequestBody' when calling usersPost");
+        throw new Error("Missing the required parameter 'usersPostRequestBody' when calling createUser");
       }
 
 
@@ -79,8 +79,8 @@ export default class UserApi {
      * @param {module:model/UsersPostRequestBody} usersPostRequestBody 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
-    usersPost(usersPostRequestBody) {
-      return this.usersPostWithHttpInfo(usersPostRequestBody);
+    createUser(usersPostRequestBody) {
+      return this.createUserWithHttpInfo(usersPostRequestBody);
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/

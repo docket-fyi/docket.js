@@ -48,70 +48,80 @@
   }
 
   describe('MeApi', function() {
-    describe('meDelete', function() {
-      it('should call meDelete successfully', function(done) {
-        //uncomment below and update the code to test meDelete
-        //instance.meDelete(function(error) {
+    describe('createMyEvent', function() {
+      it('should call createMyEvent successfully', function(done) {
+        //uncomment below and update the code to test createMyEvent
+        //instance.createMyEvent(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsGet', function() {
-      it('should call meEventsGet successfully', function(done) {
-        //uncomment below and update the code to test meEventsGet
-        //instance.meEventsGet(function(error) {
+    describe('deleteMe', function() {
+      it('should call deleteMe successfully', function(done) {
+        //uncomment below and update the code to test deleteMe
+        //instance.deleteMe(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsIdDelete', function() {
-      it('should call meEventsIdDelete successfully', function(done) {
-        //uncomment below and update the code to test meEventsIdDelete
-        //instance.meEventsIdDelete(function(error) {
+    describe('deleteMyEventById', function() {
+      it('should call deleteMyEventById successfully', function(done) {
+        //uncomment below and update the code to test deleteMyEventById
+        //instance.deleteMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsIdPut', function() {
-      it('should call meEventsIdPut successfully', function(done) {
-        //uncomment below and update the code to test meEventsIdPut
-        //instance.meEventsIdPut(function(error) {
+    describe('getMe', function() {
+      it('should call getMe successfully', function(done) {
+        //uncomment below and update the code to test getMe
+        //instance.getMe(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsPost', function() {
-      it('should call meEventsPost successfully', function(done) {
-        //uncomment below and update the code to test meEventsPost
-        //instance.meEventsPost(function(error) {
+    describe('getMyEventById', function() {
+      it('should call getMyEventById successfully', function(done) {
+        //uncomment below and update the code to test getMyEventById
+        //instance.getMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meGet', function() {
-      it('should call meGet successfully', function(done) {
-        //uncomment below and update the code to test meGet
-        //instance.meGet(function(error) {
+    describe('getMyEvents', function() {
+      it('should call getMyEvents successfully', function(done) {
+        //uncomment below and update the code to test getMyEvents
+        //instance.getMyEvents(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('mePut', function() {
-      it('should call mePut successfully', function(done) {
-        //uncomment below and update the code to test mePut
-        //instance.mePut(function(error) {
+    describe('updateMe', function() {
+      it('should call updateMe successfully', function(done) {
+        //uncomment below and update the code to test updateMe
+        //instance.updateMe(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('updateMyEventById', function() {
+      it('should call updateMyEventById successfully', function(done) {
+        //uncomment below and update the code to test updateMyEventById
+        //instance.updateMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

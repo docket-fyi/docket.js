@@ -39,11 +39,11 @@ export default class AuthApi {
    */
 
 
-  authPostWithHttpInfo(authPostRequestBody) {
+  authWithHttpInfo(authPostRequestBody) {
     let postBody = authPostRequestBody; // verify the required parameter 'authPostRequestBody' is set
 
     if (authPostRequestBody === undefined || authPostRequestBody === null) {
-      throw new Error("Missing the required parameter 'authPostRequestBody' when calling authPost");
+      throw new Error("Missing the required parameter 'authPostRequestBody' when calling auth");
     }
 
     let pathParams = {};
@@ -64,8 +64,8 @@ export default class AuthApi {
    */
 
 
-  authPost(authPostRequestBody) {
-    return this.authPostWithHttpInfo(authPostRequestBody);
+  auth(authPostRequestBody) {
+    return this.authWithHttpInfo(authPostRequestBody);
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/

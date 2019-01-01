@@ -48,40 +48,50 @@
   }
 
   describe('EventApi', function() {
-    describe('meEventsGet', function() {
-      it('should call meEventsGet successfully', function(done) {
-        //uncomment below and update the code to test meEventsGet
-        //instance.meEventsGet(function(error) {
+    describe('createMyEvent', function() {
+      it('should call createMyEvent successfully', function(done) {
+        //uncomment below and update the code to test createMyEvent
+        //instance.createMyEvent(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsIdDelete', function() {
-      it('should call meEventsIdDelete successfully', function(done) {
-        //uncomment below and update the code to test meEventsIdDelete
-        //instance.meEventsIdDelete(function(error) {
+    describe('deleteMyEventById', function() {
+      it('should call deleteMyEventById successfully', function(done) {
+        //uncomment below and update the code to test deleteMyEventById
+        //instance.deleteMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsIdPut', function() {
-      it('should call meEventsIdPut successfully', function(done) {
-        //uncomment below and update the code to test meEventsIdPut
-        //instance.meEventsIdPut(function(error) {
+    describe('getMyEventById', function() {
+      it('should call getMyEventById successfully', function(done) {
+        //uncomment below and update the code to test getMyEventById
+        //instance.getMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('meEventsPost', function() {
-      it('should call meEventsPost successfully', function(done) {
-        //uncomment below and update the code to test meEventsPost
-        //instance.meEventsPost(function(error) {
+    describe('getMyEvents', function() {
+      it('should call getMyEvents successfully', function(done) {
+        //uncomment below and update the code to test getMyEvents
+        //instance.getMyEvents(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('updateMyEventById', function() {
+      it('should call updateMyEventById successfully', function(done) {
+        //uncomment below and update the code to test updateMyEventById
+        //instance.updateMyEventById(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

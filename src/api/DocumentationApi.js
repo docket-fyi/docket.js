@@ -39,7 +39,7 @@ export default class DocumentationApi {
      * Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object} and HTTP response
      */
-    docsGetWithHttpInfo() {
+    getDocsWithHttpInfo() {
       let postBody = null;
 
 
@@ -69,8 +69,8 @@ export default class DocumentationApi {
      * Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object}
      */
-    docsGet() {
-      return this.docsGetWithHttpInfo();
+    getDocs() {
+      return this.getDocsWithHttpInfo();
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/
