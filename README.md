@@ -91,11 +91,6 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *@DocketDocketSdk.AuthApi* | [**auth**](docs/AuthApi.md#auth) | **POST** /auth | Issues a JWT
 *@DocketDocketSdk.DocumentationApi* | [**getDocs**](docs/DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
-*@DocketDocketSdk.EventApi* | [**createMyEvent**](docs/EventApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
-*@DocketDocketSdk.EventApi* | [**deleteMyEventById**](docs/EventApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user
-*@DocketDocketSdk.EventApi* | [**getMyEventById**](docs/EventApi.md#getMyEventById) | **GET** /me/events/{id} | Fetches a specific event for the current user
-*@DocketDocketSdk.EventApi* | [**getMyEvents**](docs/EventApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
-*@DocketDocketSdk.EventApi* | [**updateMyEventById**](docs/EventApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
 *@DocketDocketSdk.MeApi* | [**createMyEvent**](docs/MeApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
 *@DocketDocketSdk.MeApi* | [**deleteMe**](docs/MeApi.md#deleteMe) | **DELETE** /me | Deletes the current user
 *@DocketDocketSdk.MeApi* | [**deleteMyEventById**](docs/MeApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user

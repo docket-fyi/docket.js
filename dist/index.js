@@ -22,7 +22,6 @@ import User from './model/User';
 import UsersPostRequestBody from './model/UsersPostRequestBody';
 import AuthApi from './api/AuthApi';
 import DocumentationApi from './api/DocumentationApi';
-import EventApi from './api/EventApi';
 import MeApi from './api/MeApi';
 import UserApi from './api/UserApi';
 /**
@@ -118,11 +117,6 @@ AuthApi,
 * @property {module:api/DocumentationApi}
 */
 DocumentationApi,
-/**
-* The EventApi service constructor.
-* @property {module:api/EventApi}
-*/
-EventApi,
 /**
 * The MeApi service constructor.
 * @property {module:api/MeApi}
