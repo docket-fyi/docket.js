@@ -32,6 +32,47 @@ export default class UserApi {
     this.apiClient = apiClient || ApiClient.instance;
   }
   /**
+   * Confirms user&#39;s registration
+   * 
+   * @param {String} code 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
+   */
+
+
+  confirmUserWithHttpInfo(code) {
+    let postBody = null; // verify the required parameter 'code' is set
+
+    if (code === undefined || code === null) {
+      throw new Error("Missing the required parameter 'code' when calling confirmUser");
+    }
+
+    let pathParams = {
+      'code': code
+    };
+    let queryParams = {};
+    let headerParams = {};
+    let formParams = {};
+    let authNames = [];
+    let contentTypes = ['application/json'];
+    let accepts = ['application/json'];
+    let returnType = null;
+    return this.apiClient.callApi('/users/confirm/{code}', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+  }
+  /**
+   * Confirms user&#39;s registration
+   * 
+   * @param {String} code 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}
+   */
+
+
+  confirmUser(code) {
+    return this.confirmUserWithHttpInfo(code);
+    /*.then(function(response_and_data) {
+      return response_and_data.data;
+    });*/
+  }
+  /**
    * Create a user
    * 
    * @param {module:model/UsersPostRequestBody} usersPostRequestBody 

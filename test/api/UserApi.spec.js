@@ -48,6 +48,16 @@
   }
 
   describe('UserApi', function() {
+    describe('confirmUser', function() {
+      it('should call confirmUser successfully', function(done) {
+        //uncomment below and update the code to test confirmUser
+        //instance.confirmUser(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('createUser', function() {
       it('should call createUser successfully', function(done) {
         //uncomment below and update the code to test createUser
