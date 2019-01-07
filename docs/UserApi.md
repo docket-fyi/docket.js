@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:3000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**confirmUser**](UserApi.md#confirmUser) | **POST** /users/confirm/{code} | Confirms user&#39;s registration
+[**confirmUser**](UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 [**createUser**](UserApi.md#createUser) | **POST** /users | Create a user
 
 

@@ -99,7 +99,7 @@ Class | Method | HTTP request | Description
 *@DocketDocketSdk.MeApi* | [**getMyEvents**](docs/MeApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
 *@DocketDocketSdk.MeApi* | [**updateMe**](docs/MeApi.md#updateMe) | **PUT** /me | Updates the current user
 *@DocketDocketSdk.MeApi* | [**updateMyEventById**](docs/MeApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
-*@DocketDocketSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **POST** /users/confirm/{code} | Confirms user&#39;s registration
+*@DocketDocketSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 *@DocketDocketSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
 
 

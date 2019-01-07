@@ -56,7 +56,7 @@ export default class UserApi {
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
     let returnType = null;
-    return this.apiClient.callApi('/users/confirm/{code}', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+    return this.apiClient.callApi('/users/confirm/{code}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Confirms user&#39;s registration

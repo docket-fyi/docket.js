@@ -68,7 +68,7 @@ export default class UserApi {
       let returnType = null;
 
       return this.apiClient.callApi(
-        '/users/confirm/{code}', 'POST',
+        '/users/confirm/{code}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
