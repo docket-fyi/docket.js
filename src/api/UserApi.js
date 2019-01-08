@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
+import ForgotPasswordPostRequestBody from '../model/ForgotPasswordPostRequestBody';
 import User from '../model/User';
 import UsersPostRequestBody from '../model/UsersPostRequestBody';
 
@@ -132,6 +133,56 @@ export default class UserApi {
      */
     createUser(usersPostRequestBody) {
       return this.createUserWithHttpInfo(usersPostRequestBody);
+        /*.then(function(response_and_data) {
+          return response_and_data.data;
+        });*/
+    }
+
+
+    /**
+     * Forgot password
+     * 
+     * @param {module:model/ForgotPasswordPostRequestBody} forgotPasswordPostRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
+     */
+    forgotPasswordWithHttpInfo(forgotPasswordPostRequestBody) {
+      let postBody = forgotPasswordPostRequestBody;
+
+      // verify the required parameter 'forgotPasswordPostRequestBody' is set
+      if (forgotPasswordPostRequestBody === undefined || forgotPasswordPostRequestBody === null) {
+        throw new Error("Missing the required parameter 'forgotPasswordPostRequestBody' when calling forgotPassword");
+      }
+
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = null;
+
+      return this.apiClient.callApi(
+        '/users/forgot-password', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType
+      );
+    }
+
+    /**
+     * Forgot password
+     * 
+     * @param {module:model/ForgotPasswordPostRequestBody} forgotPasswordPostRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
+     */
+    forgotPassword(forgotPasswordPostRequestBody) {
+      return this.forgotPasswordWithHttpInfo(forgotPasswordPostRequestBody);
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/

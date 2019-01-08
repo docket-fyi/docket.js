@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**confirmUser**](UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 [**createUser**](UserApi.md#createUser) | **POST** /users | Create a user
+[**forgotPassword**](UserApi.md#forgotPassword) | **POST** /users/forgot-password | Forgot password
 
 
 <a name="confirmUser"></a>
@@ -84,6 +85,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**User**](User.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="forgotPassword"></a>
+# **forgotPassword**
+> forgotPassword(forgotPasswordPostRequestBody)
+
+Forgot password
+
+
+
+### Example
+```javascript
+import @DocketDocketSdk from '@docket/docket-sdk';
+
+let apiInstance = new @DocketDocketSdk.UserApi();
+
+let forgotPasswordPostRequestBody = new @DocketDocketSdk.ForgotPasswordPostRequestBody(); // ForgotPasswordPostRequestBody | 
+
+apiInstance.forgotPassword(forgotPasswordPostRequestBody).then(() => {
+  console.log('API called successfully.');
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **forgotPasswordPostRequestBody** | [**ForgotPasswordPostRequestBody**](ForgotPasswordPostRequestBody.md)|  | 
+
+### Return type
+
+null (empty response body)
 
 ### Authorization
 

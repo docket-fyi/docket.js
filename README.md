@@ -102,6 +102,7 @@ Class | Method | HTTP request | Description
 *@DocketDocketSdk.StatusApi* | [**getHealthCheck**](docs/StatusApi.md#getHealthCheck) | **GET** /health-check | Health check
 *@DocketDocketSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 *@DocketDocketSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
+*@DocketDocketSdk.UserApi* | [**forgotPassword**](docs/UserApi.md#forgotPassword) | **POST** /users/forgot-password | Forgot password
 
 
 ## Documentation for Models
@@ -109,6 +110,7 @@ Class | Method | HTTP request | Description
  - [@DocketDocketSdk.AuthPostRequestBody](docs/AuthPostRequestBody.md)
  - [@DocketDocketSdk.Error](docs/Error.md)
  - [@DocketDocketSdk.Event](docs/Event.md)
+ - [@DocketDocketSdk.ForgotPasswordPostRequestBody](docs/ForgotPasswordPostRequestBody.md)
  - [@DocketDocketSdk.InlineResponse200](docs/InlineResponse200.md)
  - [@DocketDocketSdk.InlineResponse2001](docs/InlineResponse2001.md)
  - [@DocketDocketSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)

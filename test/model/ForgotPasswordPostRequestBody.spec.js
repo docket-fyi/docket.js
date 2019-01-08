@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.UserApi();
+    instance = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,19 @@
       object[property] = value;
   }
 
-  describe('UserApi', function() {
-    describe('confirmUser', function() {
-      it('should call confirmUser successfully', function(done) {
-        //uncomment below and update the code to test confirmUser
-        //instance.confirmUser(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('ForgotPasswordPostRequestBody', function() {
+    it('should create an instance of ForgotPasswordPostRequestBody', function() {
+      // uncomment below and update the code to test ForgotPasswordPostRequestBody
+      //var instane = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
+      //expect(instance).to.be.a(@DocketDocketSdk.ForgotPasswordPostRequestBody);
     });
-    describe('createUser', function() {
-      it('should call createUser successfully', function(done) {
-        //uncomment below and update the code to test createUser
-        //instance.createUser(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
+      //var instane = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
+      //expect(instance).to.be();
     });
-    describe('forgotPassword', function() {
-      it('should call forgotPassword successfully', function(done) {
-        //uncomment below and update the code to test forgotPassword
-        //instance.forgotPassword(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));
