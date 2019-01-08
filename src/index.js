@@ -17,6 +17,7 @@ import AuthPostRequestBody from './model/AuthPostRequestBody';
 import Error from './model/Error';
 import Event from './model/Event';
 import InlineResponse200 from './model/InlineResponse200';
+import InlineResponse2001 from './model/InlineResponse2001';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
@@ -25,6 +26,7 @@ import UsersPostRequestBody from './model/UsersPostRequestBody';
 import AuthApi from './api/AuthApi';
 import DocumentationApi from './api/DocumentationApi';
 import MeApi from './api/MeApi';
+import StatusApi from './api/StatusApi';
 import UserApi from './api/UserApi';
 
 
@@ -91,6 +93,12 @@ export {
     InlineResponse200,
 
     /**
+     * The InlineResponse2001 model constructor.
+     * @property {module:model/InlineResponse2001}
+     */
+    InlineResponse2001,
+
+    /**
      * The MeEventPutRequestBody model constructor.
      * @property {module:model/MeEventPutRequestBody}
      */
@@ -137,6 +145,12 @@ export {
     * @property {module:api/MeApi}
     */
     MeApi,
+
+    /**
+    * The StatusApi service constructor.
+    * @property {module:api/StatusApi}
+    */
+    StatusApi,
 
     /**
     * The UserApi service constructor.

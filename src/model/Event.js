@@ -68,6 +68,9 @@ export default class Event {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
+            if (data.hasOwnProperty('slug')) {
+                obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
+            }
             if (data.hasOwnProperty('updatedAt')) {
                 obj['updatedAt'] = ApiClient.convertToType(data['updatedAt'], 'Date');
             }
@@ -94,6 +97,11 @@ export default class Event {
     * @member {String} name
     *
     name = undefined;
+    */
+    /**
+    * @member {String} slug
+    *
+    slug = undefined;
     */
     /**
     * @member {Date} updatedAt
@@ -159,6 +167,20 @@ export default class Event {
     */
     setName(name) {
         this['name'] = name;
+    }
+
+    /**
+    * @return {String}
+    */
+    getSlug() {
+        return this.slug;
+    }
+
+    /**
+    * @param {String} slug
+    */
+    setSlug(slug) {
+        this['slug'] = slug;
     }
 
     /**

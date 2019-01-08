@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **createdAt** | **Date** |  | [optional] 
 **_date** | **Date** |  | [optional] 
 **name** | **String** |  | [optional] 
+**slug** | **String** |  | [optional] 
 **updatedAt** | **Date** |  | [optional] 
 
 

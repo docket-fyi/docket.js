@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
 *@DocketDocketSdk.MeApi* | [**getMyEvents**](docs/MeApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
 *@DocketDocketSdk.MeApi* | [**updateMe**](docs/MeApi.md#updateMe) | **PUT** /me | Updates the current user
 *@DocketDocketSdk.MeApi* | [**updateMyEventById**](docs/MeApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
+*@DocketDocketSdk.StatusApi* | [**getHealthCheck**](docs/StatusApi.md#getHealthCheck) | **GET** /health-check | Health check
 *@DocketDocketSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 *@DocketDocketSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
 
@@ -109,6 +110,7 @@ Class | Method | HTTP request | Description
  - [@DocketDocketSdk.Error](docs/Error.md)
  - [@DocketDocketSdk.Event](docs/Event.md)
  - [@DocketDocketSdk.InlineResponse200](docs/InlineResponse200.md)
+ - [@DocketDocketSdk.InlineResponse2001](docs/InlineResponse2001.md)
  - [@DocketDocketSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [@DocketDocketSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)
  - [@DocketDocketSdk.MePutRequestBody](docs/MePutRequestBody.md)
