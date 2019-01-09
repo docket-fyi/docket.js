@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**confirmUser**](UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 [**createUser**](UserApi.md#createUser) | **POST** /users | Create a user
 [**forgotPassword**](UserApi.md#forgotPassword) | **POST** /users/forgot-password | Forgot password
+[**resetPassword**](UserApi.md#resetPassword) | **POST** /users/reset-password | Reset password
 
 
 <a name="confirmUser"></a>
@@ -124,6 +125,49 @@ apiInstance.forgotPassword(forgotPasswordPostRequestBody).then(() => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **forgotPasswordPostRequestBody** | [**ForgotPasswordPostRequestBody**](ForgotPasswordPostRequestBody.md)|  | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="resetPassword"></a>
+# **resetPassword**
+> resetPassword(resetPasswordPostRequestBody)
+
+Reset password
+
+
+
+### Example
+```javascript
+import @DocketDocketSdk from '@docket/docket-sdk';
+
+let apiInstance = new @DocketDocketSdk.UserApi();
+
+let resetPasswordPostRequestBody = new @DocketDocketSdk.ResetPasswordPostRequestBody(); // ResetPasswordPostRequestBody | 
+
+apiInstance.resetPassword(resetPasswordPostRequestBody).then(() => {
+  console.log('API called successfully.');
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **resetPasswordPostRequestBody** | [**ResetPasswordPostRequestBody**](ResetPasswordPostRequestBody.md)|  | 
 
 ### Return type
 

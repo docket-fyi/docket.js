@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.UserApi();
+    instance = new @DocketDocketSdk.ResetPasswordPostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,47 +47,31 @@
       object[property] = value;
   }
 
-  describe('UserApi', function() {
-    describe('confirmUser', function() {
-      it('should call confirmUser successfully', function(done) {
-        //uncomment below and update the code to test confirmUser
-        //instance.confirmUser(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('ResetPasswordPostRequestBody', function() {
+    it('should create an instance of ResetPasswordPostRequestBody', function() {
+      // uncomment below and update the code to test ResetPasswordPostRequestBody
+      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //expect(instance).to.be.a(@DocketDocketSdk.ResetPasswordPostRequestBody);
     });
-    describe('createUser', function() {
-      it('should call createUser successfully', function(done) {
-        //uncomment below and update the code to test createUser
-        //instance.createUser(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property password (base name: "password")', function() {
+      // uncomment below and update the code to test the property password
+      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //expect(instance).to.be();
     });
-    describe('forgotPassword', function() {
-      it('should call forgotPassword successfully', function(done) {
-        //uncomment below and update the code to test forgotPassword
-        //instance.forgotPassword(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property passwordConfirmation (base name: "passwordConfirmation")', function() {
+      // uncomment below and update the code to test the property passwordConfirmation
+      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //expect(instance).to.be();
     });
-    describe('resetPassword', function() {
-      it('should call resetPassword successfully', function(done) {
-        //uncomment below and update the code to test resetPassword
-        //instance.resetPassword(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property code (base name: "code")', function() {
+      // uncomment below and update the code to test the property code
+      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //expect(instance).to.be();
     });
+
   });
 
 }));

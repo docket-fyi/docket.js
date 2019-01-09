@@ -20,6 +20,7 @@ import InlineResponse2001 from './model/InlineResponse2001';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
+import ResetPasswordPostRequestBody from './model/ResetPasswordPostRequestBody';
 import User from './model/User';
 import UsersPostRequestBody from './model/UsersPostRequestBody';
 import AuthApi from './api/AuthApi';
@@ -110,6 +111,11 @@ MeEventsPostRequestBody,
  * @property {module:model/MePutRequestBody}
  */
 MePutRequestBody,
+/**
+ * The ResetPasswordPostRequestBody model constructor.
+ * @property {module:model/ResetPasswordPostRequestBody}
+ */
+ResetPasswordPostRequestBody,
 /**
  * The User model constructor.
  * @property {module:model/User}

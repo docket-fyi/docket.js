@@ -103,6 +103,7 @@ Class | Method | HTTP request | Description
 *@DocketDocketSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 *@DocketDocketSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
 *@DocketDocketSdk.UserApi* | [**forgotPassword**](docs/UserApi.md#forgotPassword) | **POST** /users/forgot-password | Forgot password
+*@DocketDocketSdk.UserApi* | [**resetPassword**](docs/UserApi.md#resetPassword) | **POST** /users/reset-password | Reset password
 
 
 ## Documentation for Models
@@ -116,6 +117,7 @@ Class | Method | HTTP request | Description
  - [@DocketDocketSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [@DocketDocketSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)
  - [@DocketDocketSdk.MePutRequestBody](docs/MePutRequestBody.md)
+ - [@DocketDocketSdk.ResetPasswordPostRequestBody](docs/ResetPasswordPostRequestBody.md)
  - [@DocketDocketSdk.User](docs/User.md)
  - [@DocketDocketSdk.UsersPostRequestBody](docs/UsersPostRequestBody.md)
 

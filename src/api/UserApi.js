@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
 import ForgotPasswordPostRequestBody from '../model/ForgotPasswordPostRequestBody';
+import ResetPasswordPostRequestBody from '../model/ResetPasswordPostRequestBody';
 import User from '../model/User';
 import UsersPostRequestBody from '../model/UsersPostRequestBody';
 
@@ -183,6 +184,56 @@ export default class UserApi {
      */
     forgotPassword(forgotPasswordPostRequestBody) {
       return this.forgotPasswordWithHttpInfo(forgotPasswordPostRequestBody);
+        /*.then(function(response_and_data) {
+          return response_and_data.data;
+        });*/
+    }
+
+
+    /**
+     * Reset password
+     * 
+     * @param {module:model/ResetPasswordPostRequestBody} resetPasswordPostRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
+     */
+    resetPasswordWithHttpInfo(resetPasswordPostRequestBody) {
+      let postBody = resetPasswordPostRequestBody;
+
+      // verify the required parameter 'resetPasswordPostRequestBody' is set
+      if (resetPasswordPostRequestBody === undefined || resetPasswordPostRequestBody === null) {
+        throw new Error("Missing the required parameter 'resetPasswordPostRequestBody' when calling resetPassword");
+      }
+
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = null;
+
+      return this.apiClient.callApi(
+        '/users/reset-password', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType
+      );
+    }
+
+    /**
+     * Reset password
+     * 
+     * @param {module:model/ResetPasswordPostRequestBody} resetPasswordPostRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
+     */
+    resetPassword(resetPasswordPostRequestBody) {
+      return this.resetPasswordWithHttpInfo(resetPasswordPostRequestBody);
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/
