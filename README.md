@@ -91,6 +91,8 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *@DocketDocketSdk.AuthApi* | [**auth**](docs/AuthApi.md#auth) | **POST** /auth | Issues a JWT
 *@DocketDocketSdk.DocumentationApi* | [**getDocs**](docs/DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
+*@DocketDocketSdk.GoogleApi* | [**getGoogleAuthTokens**](docs/GoogleApi.md#getGoogleAuthTokens) | **GET** /google/tokens | Get Google OAuth tokens
+*@DocketDocketSdk.GoogleApi* | [**getGoogleAuthUrl**](docs/GoogleApi.md#getGoogleAuthUrl) | **GET** /google/url | Get Google OAuth URL
 *@DocketDocketSdk.MeApi* | [**createMyEvent**](docs/MeApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
 *@DocketDocketSdk.MeApi* | [**deleteMe**](docs/MeApi.md#deleteMe) | **DELETE** /me | Deletes the current user
 *@DocketDocketSdk.MeApi* | [**deleteMyEventById**](docs/MeApi.md#deleteMyEventById) | **DELETE** /me/events/{id} | Deletes an event for the current user
@@ -114,6 +116,8 @@ Class | Method | HTTP request | Description
  - [@DocketDocketSdk.ForgotPasswordPostRequestBody](docs/ForgotPasswordPostRequestBody.md)
  - [@DocketDocketSdk.InlineResponse200](docs/InlineResponse200.md)
  - [@DocketDocketSdk.InlineResponse2001](docs/InlineResponse2001.md)
+ - [@DocketDocketSdk.InlineResponse2002](docs/InlineResponse2002.md)
+ - [@DocketDocketSdk.InlineResponse2003](docs/InlineResponse2003.md)
  - [@DocketDocketSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [@DocketDocketSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)
  - [@DocketDocketSdk.MePutRequestBody](docs/MePutRequestBody.md)

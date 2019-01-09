@@ -17,6 +17,8 @@ import Event from './model/Event';
 import ForgotPasswordPostRequestBody from './model/ForgotPasswordPostRequestBody';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
+import InlineResponse2002 from './model/InlineResponse2002';
+import InlineResponse2003 from './model/InlineResponse2003';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
@@ -25,6 +27,7 @@ import User from './model/User';
 import UsersPostRequestBody from './model/UsersPostRequestBody';
 import AuthApi from './api/AuthApi';
 import DocumentationApi from './api/DocumentationApi';
+import GoogleApi from './api/GoogleApi';
 import MeApi from './api/MeApi';
 import StatusApi from './api/StatusApi';
 import UserApi from './api/UserApi';
@@ -97,6 +100,16 @@ InlineResponse200,
  */
 InlineResponse2001,
 /**
+ * The InlineResponse2002 model constructor.
+ * @property {module:model/InlineResponse2002}
+ */
+InlineResponse2002,
+/**
+ * The InlineResponse2003 model constructor.
+ * @property {module:model/InlineResponse2003}
+ */
+InlineResponse2003,
+/**
  * The MeEventPutRequestBody model constructor.
  * @property {module:model/MeEventPutRequestBody}
  */
@@ -136,6 +149,11 @@ AuthApi,
 * @property {module:api/DocumentationApi}
 */
 DocumentationApi,
+/**
+* The GoogleApi service constructor.
+* @property {module:api/GoogleApi}
+*/
+GoogleApi,
 /**
 * The MeApi service constructor.
 * @property {module:api/MeApi}
