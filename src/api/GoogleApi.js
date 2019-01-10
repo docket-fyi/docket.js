@@ -39,15 +39,22 @@ export default class GoogleApi {
     /**
      * Get Google OAuth tokens
      * 
+     * @param {String} code 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
-    getGoogleAuthTokensWithHttpInfo() {
+    getGoogleAuthTokensWithHttpInfo(code) {
       let postBody = null;
+
+      // verify the required parameter 'code' is set
+      if (code === undefined || code === null) {
+        throw new Error("Missing the required parameter 'code' when calling getGoogleAuthTokens");
+      }
 
 
       let pathParams = {
       };
       let queryParams = {
+        'code': code
       };
       let headerParams = {
       };
@@ -69,10 +76,11 @@ export default class GoogleApi {
     /**
      * Get Google OAuth tokens
      * 
+     * @param {String} code 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
-    getGoogleAuthTokens() {
-      return this.getGoogleAuthTokensWithHttpInfo();
+    getGoogleAuthTokens(code) {
+      return this.getGoogleAuthTokensWithHttpInfo(code);
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/

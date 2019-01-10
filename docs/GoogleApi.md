@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getGoogleAuthTokens"></a>
 # **getGoogleAuthTokens**
-> InlineResponse2003 getGoogleAuthTokens()
+> InlineResponse2003 getGoogleAuthTokens(code)
 
 Get Google OAuth tokens
 
@@ -21,7 +21,10 @@ Get Google OAuth tokens
 import @DocketDocketSdk from '@docket/docket-sdk';
 
 let apiInstance = new @DocketDocketSdk.GoogleApi();
-apiInstance.getGoogleAuthTokens().then((data) => {
+
+let code = "code_example"; // String | 
+
+apiInstance.getGoogleAuthTokens(code).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -30,7 +33,10 @@ apiInstance.getGoogleAuthTokens().then((data) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **code** | **String**|  | 
 
 ### Return type
 
