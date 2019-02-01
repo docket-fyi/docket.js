@@ -1,4 +1,4 @@
-# @DocketDocketSdk.Event
+# DocketJsSdk.Event
 
 ## Properties
 Name | Type | Description | Notes

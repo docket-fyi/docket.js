@@ -1,4 +1,4 @@
-# @DocketDocketSdk.GoogleApi
+# DocketJsSdk.GoogleApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -18,9 +18,9 @@ Get Google OAuth tokens
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.GoogleApi();
+let apiInstance = new DocketJsSdk.GoogleApi();
 
 let code = "code_example"; // String | 
 
@@ -61,9 +61,9 @@ Get Google OAuth URL
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.GoogleApi();
+let apiInstance = new DocketJsSdk.GoogleApi();
 apiInstance.getGoogleAuthUrl().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

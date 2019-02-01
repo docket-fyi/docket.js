@@ -1,4 +1,4 @@
-# @DocketDocketSdk.ResetPasswordPostRequestBody
+# DocketJsSdk.ResetPasswordPostRequestBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.Error();
+    instance = new DocketJsSdk.Error();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Error', function() {
     it('should create an instance of Error', function() {
       // uncomment below and update the code to test Error
-      //var instane = new @DocketDocketSdk.Error();
-      //expect(instance).to.be.a(@DocketDocketSdk.Error);
+      //var instane = new DocketJsSdk.Error();
+      //expect(instance).to.be.a(DocketJsSdk.Error);
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new @DocketDocketSdk.Error();
+      //var instane = new DocketJsSdk.Error();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @DocketDocketSdk.Error();
+      //var instane = new DocketJsSdk.Error();
       //expect(instance).to.be();
     });
 

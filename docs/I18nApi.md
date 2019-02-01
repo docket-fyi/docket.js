@@ -1,4 +1,4 @@
-# @DocketDocketSdk.I18nApi
+# DocketJsSdk.I18nApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -17,9 +17,9 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.I18nApi();
+let apiInstance = new DocketJsSdk.I18nApi();
 
 let localeCode = "localeCode_example"; // String | 
 

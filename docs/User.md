@@ -1,4 +1,4 @@
-# @DocketDocketSdk.User
+# DocketJsSdk.User
 
 ## Properties
 Name | Type | Description | Notes

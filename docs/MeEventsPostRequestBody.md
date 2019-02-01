@@ -1,4 +1,4 @@
-# @DocketDocketSdk.MeEventsPostRequestBody
+# DocketJsSdk.MeEventsPostRequestBody
 
 ## Properties
 Name | Type | Description | Notes

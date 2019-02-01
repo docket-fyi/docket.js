@@ -1,4 +1,4 @@
-# @DocketDocketSdk.AuthApi
+# DocketJsSdk.AuthApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -17,11 +17,11 @@ Issues a JWT
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.AuthApi();
+let apiInstance = new DocketJsSdk.AuthApi();
 
-let authPostRequestBody = new @DocketDocketSdk.AuthPostRequestBody(); // AuthPostRequestBody | 
+let authPostRequestBody = new DocketJsSdk.AuthPostRequestBody(); // AuthPostRequestBody | 
 
 apiInstance.auth(authPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.User();
+    instance = new DocketJsSdk.User();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('User', function() {
     it('should create an instance of User', function() {
       // uncomment below and update the code to test User
-      //var instane = new @DocketDocketSdk.User();
-      //expect(instance).to.be.a(@DocketDocketSdk.User);
+      //var instane = new DocketJsSdk.User();
+      //expect(instance).to.be.a(DocketJsSdk.User);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updatedAt")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instane = new @DocketDocketSdk.User();
+      //var instane = new DocketJsSdk.User();
       //expect(instance).to.be();
     });
 

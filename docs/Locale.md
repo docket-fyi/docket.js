@@ -1,4 +1,4 @@
-# @DocketDocketSdk.Locale
+# DocketJsSdk.Locale
 
 ## Properties
 Name | Type | Description | Notes

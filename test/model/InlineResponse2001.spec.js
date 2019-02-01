@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.InlineResponse2001();
+    instance = new DocketJsSdk.InlineResponse2001();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineResponse2001', function() {
     it('should create an instance of InlineResponse2001', function() {
       // uncomment below and update the code to test InlineResponse2001
-      //var instane = new @DocketDocketSdk.InlineResponse2001();
-      //expect(instance).to.be.a(@DocketDocketSdk.InlineResponse2001);
+      //var instane = new DocketJsSdk.InlineResponse2001();
+      //expect(instance).to.be.a(DocketJsSdk.InlineResponse2001);
     });
 
     it('should have the property success (base name: "success")', function() {
       // uncomment below and update the code to test the property success
-      //var instane = new @DocketDocketSdk.InlineResponse2001();
+      //var instane = new DocketJsSdk.InlineResponse2001();
       //expect(instance).to.be();
     });
 

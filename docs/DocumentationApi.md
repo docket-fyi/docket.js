@@ -1,4 +1,4 @@
-# @DocketDocketSdk.DocumentationApi
+# DocketJsSdk.DocumentationApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -17,9 +17,9 @@ Returns an OpenAPI 3.0 spec describing HTTP methods, endpoints, parameters, etc.
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.DocumentationApi();
+let apiInstance = new DocketJsSdk.DocumentationApi();
 apiInstance.getDocs().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.InlineResponse200();
+    instance = new DocketJsSdk.InlineResponse200();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineResponse200', function() {
     it('should create an instance of InlineResponse200', function() {
       // uncomment below and update the code to test InlineResponse200
-      //var instane = new @DocketDocketSdk.InlineResponse200();
-      //expect(instance).to.be.a(@DocketDocketSdk.InlineResponse200);
+      //var instane = new DocketJsSdk.InlineResponse200();
+      //expect(instance).to.be.a(DocketJsSdk.InlineResponse200);
     });
 
     it('should have the property jwt (base name: "jwt")', function() {
       // uncomment below and update the code to test the property jwt
-      //var instane = new @DocketDocketSdk.InlineResponse200();
+      //var instane = new DocketJsSdk.InlineResponse200();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.Event();
+    instance = new DocketJsSdk.Event();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('Event', function() {
     it('should create an instance of Event', function() {
       // uncomment below and update the code to test Event
-      //var instane = new @DocketDocketSdk.Event();
-      //expect(instance).to.be.a(@DocketDocketSdk.Event);
+      //var instane = new DocketJsSdk.Event();
+      //expect(instance).to.be.a(DocketJsSdk.Event);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 
     it('should have the property slug (base name: "slug")', function() {
       // uncomment below and update the code to test the property slug
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updatedAt")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instane = new @DocketDocketSdk.Event();
+      //var instane = new DocketJsSdk.Event();
       //expect(instance).to.be();
     });
 

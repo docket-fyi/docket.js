@@ -1,4 +1,4 @@
-# @DocketDocketSdk.UserApi
+# DocketJsSdk.UserApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -20,9 +20,9 @@ Confirms user&#39;s registration
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.UserApi();
+let apiInstance = new DocketJsSdk.UserApi();
 
 let code = "code_example"; // String | 
 
@@ -63,11 +63,11 @@ Create a user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.UserApi();
+let apiInstance = new DocketJsSdk.UserApi();
 
-let usersPostRequestBody = new @DocketDocketSdk.UsersPostRequestBody(); // UsersPostRequestBody | 
+let usersPostRequestBody = new DocketJsSdk.UsersPostRequestBody(); // UsersPostRequestBody | 
 
 apiInstance.createUser(usersPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -106,11 +106,11 @@ Forgot password
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.UserApi();
+let apiInstance = new DocketJsSdk.UserApi();
 
-let forgotPasswordPostRequestBody = new @DocketDocketSdk.ForgotPasswordPostRequestBody(); // ForgotPasswordPostRequestBody | 
+let forgotPasswordPostRequestBody = new DocketJsSdk.ForgotPasswordPostRequestBody(); // ForgotPasswordPostRequestBody | 
 
 apiInstance.forgotPassword(forgotPasswordPostRequestBody).then(() => {
   console.log('API called successfully.');
@@ -149,11 +149,11 @@ Reset password
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.UserApi();
+let apiInstance = new DocketJsSdk.UserApi();
 
-let resetPasswordPostRequestBody = new @DocketDocketSdk.ResetPasswordPostRequestBody(); // ResetPasswordPostRequestBody | 
+let resetPasswordPostRequestBody = new DocketJsSdk.ResetPasswordPostRequestBody(); // ResetPasswordPostRequestBody | 
 
 apiInstance.resetPassword(resetPasswordPostRequestBody).then(() => {
   console.log('API called successfully.');

@@ -1,4 +1,4 @@
-# @DocketDocketSdk.ForgotPasswordPostRequestBody
+# DocketJsSdk.ForgotPasswordPostRequestBody
 
 ## Properties
 Name | Type | Description | Notes

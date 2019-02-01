@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.MeEventsPostRequestBody();
+    instance = new DocketJsSdk.MeEventsPostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('MeEventsPostRequestBody', function() {
     it('should create an instance of MeEventsPostRequestBody', function() {
       // uncomment below and update the code to test MeEventsPostRequestBody
-      //var instane = new @DocketDocketSdk.MeEventsPostRequestBody();
-      //expect(instance).to.be.a(@DocketDocketSdk.MeEventsPostRequestBody);
+      //var instane = new DocketJsSdk.MeEventsPostRequestBody();
+      //expect(instance).to.be.a(DocketJsSdk.MeEventsPostRequestBody);
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instane = new @DocketDocketSdk.MeEventsPostRequestBody();
+      //var instane = new DocketJsSdk.MeEventsPostRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @DocketDocketSdk.MeEventsPostRequestBody();
+      //var instane = new DocketJsSdk.MeEventsPostRequestBody();
       //expect(instance).to.be();
     });
 

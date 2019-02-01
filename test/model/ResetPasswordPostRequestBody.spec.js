@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+    instance = new DocketJsSdk.ResetPasswordPostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ResetPasswordPostRequestBody', function() {
     it('should create an instance of ResetPasswordPostRequestBody', function() {
       // uncomment below and update the code to test ResetPasswordPostRequestBody
-      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
-      //expect(instance).to.be.a(@DocketDocketSdk.ResetPasswordPostRequestBody);
+      //var instane = new DocketJsSdk.ResetPasswordPostRequestBody();
+      //expect(instance).to.be.a(DocketJsSdk.ResetPasswordPostRequestBody);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //var instane = new DocketJsSdk.ResetPasswordPostRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordConfirmation (base name: "passwordConfirmation")', function() {
       // uncomment below and update the code to test the property passwordConfirmation
-      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //var instane = new DocketJsSdk.ResetPasswordPostRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instane = new @DocketDocketSdk.ResetPasswordPostRequestBody();
+      //var instane = new DocketJsSdk.ResetPasswordPostRequestBody();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# @DocketDocketSdk.AuthPostRequestBody
+# DocketJsSdk.AuthPostRequestBody
 
 ## Properties
 Name | Type | Description | Notes

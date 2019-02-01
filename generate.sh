@@ -3,6 +3,7 @@
 CURRENT_VERSION=$(docker run -i --rm stedolan/jq < package.json '.version')
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 INPUT_SPEC="http://docket-api:3000/v1/docs"
+NAME="@docket/docket.js"
 
 echo "Cleaning..."
 rm -rf \
@@ -33,11 +34,15 @@ docker run \
     --lang javascript \
     --output /local \
     --template-dir /local/modules/swagger-codegen/src/main/resources/Javascript/es6 \
-    --additional-properties usePromises=true,useES6=true,emitModelMethods=true,projectName='@docket/docket-sdk',projectDescription='JavaScript SDK for interfacing with the Docket API'
+    --additional-properties usePromises=true,useES6=true,emitModelMethods=true,projectName='docket-js-sdk',projectDescription='JavaScript SDK for interfacing with the Docket API'
 echo "Done."
 
 echo "Updating package.json 'version' to ${CURRENT_VERSION}..."
 docker run -i -e CURRENT_VERSION=$CURRENT_VERSION --rm stedolan/jq < package.json ".version = $CURRENT_VERSION" > package.tmp.json && mv package.tmp.json package.json
+echo "Done."
+
+echo "Updating package.json 'name' to ${NAME}..."
+docker run -i -e NAME=$NAME --rm stedolan/jq < package.json ".name = \"$NAME\"" > package.tmp.json && mv package.tmp.json package.json
 echo "Done."
 
 echo "Transpiling via Babel..."

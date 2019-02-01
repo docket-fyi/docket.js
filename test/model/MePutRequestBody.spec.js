@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.MePutRequestBody();
+    instance = new DocketJsSdk.MePutRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('MePutRequestBody', function() {
     it('should create an instance of MePutRequestBody', function() {
       // uncomment below and update the code to test MePutRequestBody
-      //var instane = new @DocketDocketSdk.MePutRequestBody();
-      //expect(instance).to.be.a(@DocketDocketSdk.MePutRequestBody);
+      //var instane = new DocketJsSdk.MePutRequestBody();
+      //expect(instance).to.be.a(DocketJsSdk.MePutRequestBody);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @DocketDocketSdk.MePutRequestBody();
+      //var instane = new DocketJsSdk.MePutRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new @DocketDocketSdk.MePutRequestBody();
+      //var instane = new DocketJsSdk.MePutRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new @DocketDocketSdk.MePutRequestBody();
+      //var instane = new DocketJsSdk.MePutRequestBody();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new @DocketDocketSdk.MePutRequestBody();
+      //var instane = new DocketJsSdk.MePutRequestBody();
       //expect(instance).to.be();
     });
 

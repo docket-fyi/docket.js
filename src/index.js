@@ -43,9 +43,9 @@ import UserApi from './api/UserApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var @DocketDocketSdk = require('index'); // See note below*.
-* var xxxSvc = new @DocketDocketSdk.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new @DocketDocketSdk.Yyy(); // Construct a model instance.
+* var DocketJsSdk = require('index'); // See note below*.
+* var xxxSvc = new DocketJsSdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new DocketJsSdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -57,8 +57,8 @@ import UserApi from './api/UserApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new @DocketDocketSdk.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new @DocketDocketSdk.Yyy(); // Construct a model instance.
+* var xxxSvc = new DocketJsSdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new DocketJsSdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

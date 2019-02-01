@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.Locale();
+    instance = new DocketJsSdk.Locale();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('Locale', function() {
     it('should create an instance of Locale', function() {
       // uncomment below and update the code to test Locale
-      //var instane = new @DocketDocketSdk.Locale();
-      //expect(instance).to.be.a(@DocketDocketSdk.Locale);
+      //var instane = new DocketJsSdk.Locale();
+      //expect(instance).to.be.a(DocketJsSdk.Locale);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @DocketDocketSdk.Locale();
+      //var instane = new DocketJsSdk.Locale();
       //expect(instance).to.be();
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instane = new @DocketDocketSdk.Locale();
+      //var instane = new DocketJsSdk.Locale();
       //expect(instance).to.be();
     });
 
     it('should have the property translations (base name: "translations")', function() {
       // uncomment below and update the code to test the property translations
-      //var instane = new @DocketDocketSdk.Locale();
+      //var instane = new DocketJsSdk.Locale();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instane = new @DocketDocketSdk.Locale();
+      //var instane = new DocketJsSdk.Locale();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updatedAt")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instane = new @DocketDocketSdk.Locale();
+      //var instane = new DocketJsSdk.Locale();
       //expect(instance).to.be();
     });
 

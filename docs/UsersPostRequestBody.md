@@ -1,4 +1,4 @@
-# @DocketDocketSdk.UsersPostRequestBody
+# DocketJsSdk.UsersPostRequestBody
 
 ## Properties
 Name | Type | Description | Notes

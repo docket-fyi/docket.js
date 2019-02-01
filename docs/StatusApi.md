@@ -1,4 +1,4 @@
-# @DocketDocketSdk.StatusApi
+# DocketJsSdk.StatusApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -17,9 +17,9 @@ Health check
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
+import DocketJsSdk from 'docket-js-sdk';
 
-let apiInstance = new @DocketDocketSdk.StatusApi();
+let apiInstance = new DocketJsSdk.StatusApi();
 apiInstance.getHealthCheck().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

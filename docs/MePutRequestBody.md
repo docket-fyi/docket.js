@@ -1,4 +1,4 @@
-# @DocketDocketSdk.MePutRequestBody
+# DocketJsSdk.MePutRequestBody
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# @DocketDocketSdk.MeApi
+# DocketJsSdk.MeApi
 
 All URIs are relative to *http://localhost:3000/v1*
 
@@ -24,8 +24,8 @@ Creates a new event for the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -33,9 +33,9 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 
-let meEventsPostRequestBody = new @DocketDocketSdk.MeEventsPostRequestBody(); // MeEventsPostRequestBody | 
+let meEventsPostRequestBody = new DocketJsSdk.MeEventsPostRequestBody(); // MeEventsPostRequestBody | 
 
 apiInstance.createMyEvent(meEventsPostRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -74,8 +74,8 @@ Deletes the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -83,7 +83,7 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 apiInstance.deleteMe().then(() => {
   console.log('API called successfully.');
 }, (error) => {
@@ -118,8 +118,8 @@ Deletes an event for the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -127,7 +127,7 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 
 let id = "id_example"; // String | 
 
@@ -168,8 +168,8 @@ Fetches the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -177,7 +177,7 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 apiInstance.getMe().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -212,8 +212,8 @@ Fetches a specific event for the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -221,7 +221,7 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 
 let id = "id_example"; // String | 
 
@@ -262,8 +262,8 @@ Fetches all events for the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -271,7 +271,7 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 apiInstance.getMyEvents().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -306,8 +306,8 @@ Updates the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -315,9 +315,9 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 
-let mePutRequestBody = new @DocketDocketSdk.MePutRequestBody(); // MePutRequestBody | 
+let mePutRequestBody = new DocketJsSdk.MePutRequestBody(); // MePutRequestBody | 
 
 apiInstance.updateMe(mePutRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -356,8 +356,8 @@ Updates an event for the current user
 
 ### Example
 ```javascript
-import @DocketDocketSdk from '@docket/docket-sdk';
-let defaultClient = @DocketDocketSdk.ApiClient.instance;
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
 
 // Configure API key authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -365,11 +365,11 @@ bearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new @DocketDocketSdk.MeApi();
+let apiInstance = new DocketJsSdk.MeApi();
 
 let id = "id_example"; // String | 
 
-let meEventPutRequestBody = new @DocketDocketSdk.MeEventPutRequestBody(); // MeEventPutRequestBody | 
+let meEventPutRequestBody = new DocketJsSdk.MeEventPutRequestBody(); // MeEventPutRequestBody | 
 
 apiInstance.updateMyEventById(id, meEventPutRequestBody).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

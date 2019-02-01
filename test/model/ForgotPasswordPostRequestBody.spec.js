@@ -20,15 +20,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@DocketDocketSdk);
+    factory(root.expect, root.DocketJsSdk);
   }
-}(this, function(expect, @DocketDocketSdk) {
+}(this, function(expect, DocketJsSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
+    instance = new DocketJsSdk.ForgotPasswordPostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ForgotPasswordPostRequestBody', function() {
     it('should create an instance of ForgotPasswordPostRequestBody', function() {
       // uncomment below and update the code to test ForgotPasswordPostRequestBody
-      //var instane = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
-      //expect(instance).to.be.a(@DocketDocketSdk.ForgotPasswordPostRequestBody);
+      //var instane = new DocketJsSdk.ForgotPasswordPostRequestBody();
+      //expect(instance).to.be.a(DocketJsSdk.ForgotPasswordPostRequestBody);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new @DocketDocketSdk.ForgotPasswordPostRequestBody();
+      //var instane = new DocketJsSdk.ForgotPasswordPostRequestBody();
       //expect(instance).to.be();
     });
 

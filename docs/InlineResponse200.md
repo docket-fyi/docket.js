@@ -1,4 +1,4 @@
-# @DocketDocketSdk.InlineResponse200
+# DocketJsSdk.InlineResponse200
 
 ## Properties
 Name | Type | Description | Notes
