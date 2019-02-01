@@ -21,6 +21,7 @@ import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
 import InlineResponse2003 from './model/InlineResponse2003';
+import Locale from './model/Locale';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
@@ -30,6 +31,7 @@ import UsersPostRequestBody from './model/UsersPostRequestBody';
 import AuthApi from './api/AuthApi';
 import DocumentationApi from './api/DocumentationApi';
 import GoogleApi from './api/GoogleApi';
+import I18nApi from './api/I18nApi';
 import MeApi from './api/MeApi';
 import StatusApi from './api/StatusApi';
 import UserApi from './api/UserApi';
@@ -122,6 +124,12 @@ export {
     InlineResponse2003,
 
     /**
+     * The Locale model constructor.
+     * @property {module:model/Locale}
+     */
+    Locale,
+
+    /**
      * The MeEventPutRequestBody model constructor.
      * @property {module:model/MeEventPutRequestBody}
      */
@@ -174,6 +182,12 @@ export {
     * @property {module:api/GoogleApi}
     */
     GoogleApi,
+
+    /**
+    * The I18nApi service constructor.
+    * @property {module:api/I18nApi}
+    */
+    I18nApi,
 
     /**
     * The MeApi service constructor.
