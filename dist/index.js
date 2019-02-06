@@ -19,6 +19,7 @@ import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
 import InlineResponse2003 from './model/InlineResponse2003';
+import InlineResponse2004 from './model/InlineResponse2004';
 import Locale from './model/Locale';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
@@ -111,6 +112,11 @@ InlineResponse2002,
  * @property {module:model/InlineResponse2003}
  */
 InlineResponse2003,
+/**
+ * The InlineResponse2004 model constructor.
+ * @property {module:model/InlineResponse2004}
+ */
+InlineResponse2004,
 /**
  * The Locale model constructor.
  * @property {module:model/Locale}

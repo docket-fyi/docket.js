@@ -37,34 +37,34 @@ export default class InlineResponse2002 {
     if (data) {
       obj = obj || new InlineResponse2002();
 
-      if (data.hasOwnProperty('url')) {
-        obj['url'] = ApiClient.convertToType(data['url'], 'String');
+      if (data.hasOwnProperty('translations')) {
+        obj['translations'] = ApiClient.convertToType(data['translations'], Object);
       }
     }
 
     return obj;
   }
   /**
-  * @member {String} url
+  * @member {Object} translations
   *
-  url = undefined;
+  translations = undefined;
   */
 
   /**
-  * @return {String}
+  * @return {Object}
   */
 
 
-  getUrl() {
-    return this.url;
+  getTranslations() {
+    return this.translations;
   }
   /**
-  * @param {String} url
+  * @param {Object} translations
   */
 
 
-  setUrl(url) {
-    this['url'] = url;
+  setTranslations(translations) {
+    this['translations'] = translations;
   }
 
 }

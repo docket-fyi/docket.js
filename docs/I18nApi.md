@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getLocale"></a>
 # **getLocale**
-> Locale getLocale(localeCode)
+> InlineResponse2002 getLocale(localeCode)
 
 
 
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Locale**](Locale.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

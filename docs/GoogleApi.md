@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getGoogleAuthTokens"></a>
 # **getGoogleAuthTokens**
-> InlineResponse2003 getGoogleAuthTokens(code)
+> InlineResponse2004 getGoogleAuthTokens(code)
 
 Get Google OAuth tokens
 
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -53,7 +53,7 @@ No authorization required
 
 <a name="getGoogleAuthUrl"></a>
 # **getGoogleAuthUrl**
-> InlineResponse2002 getGoogleAuthUrl()
+> InlineResponse2003 getGoogleAuthUrl()
 
 Get Google OAuth URL
 
@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

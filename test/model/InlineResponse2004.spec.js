@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.InlineResponse2003();
+    instance = new DocketJsSdk.InlineResponse2004();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,16 @@
       object[property] = value;
   }
 
-  describe('InlineResponse2003', function() {
-    it('should create an instance of InlineResponse2003', function() {
-      // uncomment below and update the code to test InlineResponse2003
-      //var instane = new DocketJsSdk.InlineResponse2003();
-      //expect(instance).to.be.a(DocketJsSdk.InlineResponse2003);
+  describe('InlineResponse2004', function() {
+    it('should create an instance of InlineResponse2004', function() {
+      // uncomment below and update the code to test InlineResponse2004
+      //var instane = new DocketJsSdk.InlineResponse2004();
+      //expect(instance).to.be.a(DocketJsSdk.InlineResponse2004);
     });
 
-    it('should have the property url (base name: "url")', function() {
-      // uncomment below and update the code to test the property url
-      //var instane = new DocketJsSdk.InlineResponse2003();
+    it('should have the property access (base name: "access")', function() {
+      // uncomment below and update the code to test the property access
+      //var instane = new DocketJsSdk.InlineResponse2004();
       //expect(instance).to.be();
     });
 

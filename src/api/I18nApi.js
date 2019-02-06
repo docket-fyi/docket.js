@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
-import Locale from '../model/Locale';
+import InlineResponse2002 from '../model/InlineResponse2002';
 
 /**
 * I18n service.
@@ -40,7 +40,7 @@ export default class I18nApi {
      * 
      * 
      * @param {String} localeCode 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Locale} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
     getLocaleWithHttpInfo(localeCode) {
       let postBody = null;
@@ -64,7 +64,7 @@ export default class I18nApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = Locale;
+      let returnType = InlineResponse2002;
 
       return this.apiClient.callApi(
         '/i18n/{localeCode}', 'GET',
@@ -77,7 +77,7 @@ export default class I18nApi {
      * 
      * 
      * @param {String} localeCode 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Locale}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
     getLocale(localeCode) {
       return this.getLocaleWithHttpInfo(localeCode);

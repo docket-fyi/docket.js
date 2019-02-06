@@ -37,17 +37,17 @@ export default class InlineResponse2003 {
     if (data) {
       obj = obj || new InlineResponse2003();
 
-      if (data.hasOwnProperty('access')) {
-        obj['access'] = ApiClient.convertToType(data['access'], 'String');
+      if (data.hasOwnProperty('url')) {
+        obj['url'] = ApiClient.convertToType(data['url'], 'String');
       }
     }
 
     return obj;
   }
   /**
-  * @member {String} access
+  * @member {String} url
   *
-  access = undefined;
+  url = undefined;
   */
 
   /**
@@ -55,16 +55,16 @@ export default class InlineResponse2003 {
   */
 
 
-  getAccess() {
-    return this.access;
+  getUrl() {
+    return this.url;
   }
   /**
-  * @param {String} access
+  * @param {String} url
   */
 
 
-  setAccess(access) {
-    this['access'] = access;
+  setUrl(url) {
+    this['url'] = url;
   }
 
 }

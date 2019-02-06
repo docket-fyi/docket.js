@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(DocketJsSdk.InlineResponse2002);
     });
 
-    it('should have the property url (base name: "url")', function() {
-      // uncomment below and update the code to test the property url
+    it('should have the property translations (base name: "translations")', function() {
+      // uncomment below and update the code to test the property translations
       //var instane = new DocketJsSdk.InlineResponse2002();
       //expect(instance).to.be();
     });

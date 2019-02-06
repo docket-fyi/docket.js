@@ -19,14 +19,14 @@ import ApiClient from '../ApiClient';
 
 
 /**
-* The InlineResponse2003 model module.
-* @module model/InlineResponse2003
+* The InlineResponse2004 model module.
+* @module model/InlineResponse2004
 * @version 0.1.0
 */
-export default class InlineResponse2003 {
+export default class InlineResponse2004 {
     /**
-    * Constructs a new <code>InlineResponse2003</code>.
-    * @alias module:model/InlineResponse2003
+    * Constructs a new <code>InlineResponse2004</code>.
+    * @alias module:model/InlineResponse2004
     * @class
     */
 
@@ -42,31 +42,31 @@ export default class InlineResponse2003 {
     }
 
     /**
-    * Constructs a <code>InlineResponse2003</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>InlineResponse2004</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:model/InlineResponse2003} obj Optional instance to populate.
-    * @return {module:model/InlineResponse2003} The populated <code>InlineResponse2003</code> instance.
+    * @param {module:model/InlineResponse2004} obj Optional instance to populate.
+    * @return {module:model/InlineResponse2004} The populated <code>InlineResponse2004</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new InlineResponse2003();
+            obj = obj || new InlineResponse2004();
 
             
             
             
 
-            if (data.hasOwnProperty('url')) {
-                obj['url'] = ApiClient.convertToType(data['url'], 'String');
+            if (data.hasOwnProperty('access')) {
+                obj['access'] = ApiClient.convertToType(data['access'], 'String');
             }
         }
         return obj;
     }
 
     /**
-    * @member {String} url
+    * @member {String} access
     *
-    url = undefined;
+    access = undefined;
     */
 
 
@@ -76,15 +76,15 @@ export default class InlineResponse2003 {
     /**
     * @return {String}
     */
-    getUrl() {
-        return this.url;
+    getAccess() {
+        return this.access;
     }
 
     /**
-    * @param {String} url
+    * @param {String} access
     */
-    setUrl(url) {
-        this['url'] = url;
+    setAccess(access) {
+        this['access'] = access;
     }
 
 

@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property translationKey (base name: "translationKey")', function() {
+      // uncomment below and update the code to test the property translationKey
+      //var instane = new DocketJsSdk.Error();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

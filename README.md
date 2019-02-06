@@ -119,6 +119,7 @@ Class | Method | HTTP request | Description
  - [DocketJsSdk.InlineResponse2001](docs/InlineResponse2001.md)
  - [DocketJsSdk.InlineResponse2002](docs/InlineResponse2002.md)
  - [DocketJsSdk.InlineResponse2003](docs/InlineResponse2003.md)
+ - [DocketJsSdk.InlineResponse2004](docs/InlineResponse2004.md)
  - [DocketJsSdk.Locale](docs/Locale.md)
  - [DocketJsSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [DocketJsSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)

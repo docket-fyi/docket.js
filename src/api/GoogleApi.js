@@ -13,8 +13,8 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse2002 from '../model/InlineResponse2002';
 import InlineResponse2003 from '../model/InlineResponse2003';
+import InlineResponse2004 from '../model/InlineResponse2004';
 
 /**
 * Google service.
@@ -40,7 +40,7 @@ export default class GoogleApi {
      * Get Google OAuth tokens
      * 
      * @param {String} code 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     getGoogleAuthTokensWithHttpInfo(code) {
       let postBody = null;
@@ -64,7 +64,7 @@ export default class GoogleApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
 
       return this.apiClient.callApi(
         '/google/tokens', 'GET',
@@ -77,7 +77,7 @@ export default class GoogleApi {
      * Get Google OAuth tokens
      * 
      * @param {String} code 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     getGoogleAuthTokens(code) {
       return this.getGoogleAuthTokensWithHttpInfo(code);
@@ -90,7 +90,7 @@ export default class GoogleApi {
     /**
      * Get Google OAuth URL
      * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
     getGoogleAuthUrlWithHttpInfo() {
       let postBody = null;
@@ -108,7 +108,7 @@ export default class GoogleApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse2003;
 
       return this.apiClient.callApi(
         '/google/url', 'GET',
@@ -120,7 +120,7 @@ export default class GoogleApi {
     /**
      * Get Google OAuth URL
      * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
     getGoogleAuthUrl() {
       return this.getGoogleAuthUrlWithHttpInfo();

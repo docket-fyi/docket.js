@@ -1,8 +1,8 @@
-# DocketJsSdk.InlineResponse2003
+# DocketJsSdk.InlineResponse2004
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**url** | **String** |  | [optional] 
+**access** | **String** |  | [optional] 
 
 

@@ -44,6 +44,10 @@ export default class Error {
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
+
+      if (data.hasOwnProperty('translationKey')) {
+        obj['translationKey'] = ApiClient.convertToType(data['translationKey'], 'String');
+      }
     }
 
     return obj;
@@ -58,6 +62,12 @@ export default class Error {
   * @member {String} name
   *
   name = undefined;
+  */
+
+  /**
+  * @member {String} translationKey
+  *
+  translationKey = undefined;
   */
 
   /**
@@ -91,6 +101,22 @@ export default class Error {
 
   setName(name) {
     this['name'] = name;
+  }
+  /**
+  * @return {String}
+  */
+
+
+  getTranslationKey() {
+    return this.translationKey;
+  }
+  /**
+  * @param {String} translationKey
+  */
+
+
+  setTranslationKey(translationKey) {
+    this['translationKey'] = translationKey;
   }
 
 }
