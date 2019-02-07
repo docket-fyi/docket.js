@@ -91,6 +91,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *DocketJsSdk.AuthApi* | [**auth**](docs/AuthApi.md#auth) | **POST** /auth | Issues a JWT
 *DocketJsSdk.DocumentationApi* | [**getDocs**](docs/DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
+*DocketJsSdk.GoogleApi* | [**getAllGoogleCalendarLists**](docs/GoogleApi.md#getAllGoogleCalendarLists) | **GET** /google/calendar-list | Get Google calendar lists
 *DocketJsSdk.GoogleApi* | [**getGoogleAuthTokens**](docs/GoogleApi.md#getGoogleAuthTokens) | **GET** /google/tokens | Get Google OAuth tokens
 *DocketJsSdk.GoogleApi* | [**getGoogleAuthUrl**](docs/GoogleApi.md#getGoogleAuthUrl) | **GET** /google/url | Get Google OAuth URL
 *DocketJsSdk.I18nApi* | [**getLocale**](docs/I18nApi.md#getLocale) | **GET** /i18n/{localeCode} | 
@@ -115,6 +116,9 @@ Class | Method | HTTP request | Description
  - [DocketJsSdk.Error](docs/Error.md)
  - [DocketJsSdk.Event](docs/Event.md)
  - [DocketJsSdk.ForgotPasswordPostRequestBody](docs/ForgotPasswordPostRequestBody.md)
+ - [DocketJsSdk.GoogleCalendar](docs/GoogleCalendar.md)
+ - [DocketJsSdk.GoogleCalendarEvent](docs/GoogleCalendarEvent.md)
+ - [DocketJsSdk.GoogleCalendarList](docs/GoogleCalendarList.md)
  - [DocketJsSdk.InlineResponse200](docs/InlineResponse200.md)
  - [DocketJsSdk.InlineResponse2001](docs/InlineResponse2001.md)
  - [DocketJsSdk.InlineResponse2002](docs/InlineResponse2002.md)

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.GoogleApi();
+    instance = new DocketJsSdk.GoogleCalendarEvent();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,13 @@
       object[property] = value;
   }
 
-  describe('GoogleApi', function() {
-    describe('getAllGoogleCalendarLists', function() {
-      it('should call getAllGoogleCalendarLists successfully', function(done) {
-        //uncomment below and update the code to test getAllGoogleCalendarLists
-        //instance.getAllGoogleCalendarLists(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('GoogleCalendarEvent', function() {
+    it('should create an instance of GoogleCalendarEvent', function() {
+      // uncomment below and update the code to test GoogleCalendarEvent
+      //var instane = new DocketJsSdk.GoogleCalendarEvent();
+      //expect(instance).to.be.a(DocketJsSdk.GoogleCalendarEvent);
     });
-    describe('getGoogleAuthTokens', function() {
-      it('should call getGoogleAuthTokens successfully', function(done) {
-        //uncomment below and update the code to test getGoogleAuthTokens
-        //instance.getGoogleAuthTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getGoogleAuthUrl', function() {
-      it('should call getGoogleAuthUrl successfully', function(done) {
-        //uncomment below and update the code to test getGoogleAuthUrl
-        //instance.getGoogleAuthUrl(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

@@ -13,6 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
+import GoogleCalendarList from '../model/GoogleCalendarList';
 import InlineResponse2003 from '../model/InlineResponse2003';
 import InlineResponse2004 from '../model/InlineResponse2004';
 
@@ -34,6 +35,49 @@ export default class GoogleApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Get Google calendar lists
+     * Get Google calendar lists
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/GoogleCalendarList>} and HTTP response
+     */
+    getAllGoogleCalendarListsWithHttpInfo() {
+      let postBody = null;
+
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = [GoogleCalendarList];
+
+      return this.apiClient.callApi(
+        '/google/calendar-list', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType
+      );
+    }
+
+    /**
+     * Get Google calendar lists
+     * Get Google calendar lists
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/GoogleCalendarList>}
+     */
+    getAllGoogleCalendarLists() {
+      return this.getAllGoogleCalendarListsWithHttpInfo();
+        /*.then(function(response_and_data) {
+          return response_and_data.data;
+        });*/
+    }
 
 
     /**
@@ -61,7 +105,7 @@ export default class GoogleApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = InlineResponse2004;

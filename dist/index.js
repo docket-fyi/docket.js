@@ -15,6 +15,9 @@ import AuthPostRequestBody from './model/AuthPostRequestBody';
 import Error from './model/Error';
 import Event from './model/Event';
 import ForgotPasswordPostRequestBody from './model/ForgotPasswordPostRequestBody';
+import GoogleCalendar from './model/GoogleCalendar';
+import GoogleCalendarEvent from './model/GoogleCalendarEvent';
+import GoogleCalendarList from './model/GoogleCalendarList';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
@@ -92,6 +95,21 @@ Event,
  * @property {module:model/ForgotPasswordPostRequestBody}
  */
 ForgotPasswordPostRequestBody,
+/**
+ * The GoogleCalendar model constructor.
+ * @property {module:model/GoogleCalendar}
+ */
+GoogleCalendar,
+/**
+ * The GoogleCalendarEvent model constructor.
+ * @property {module:model/GoogleCalendarEvent}
+ */
+GoogleCalendarEvent,
+/**
+ * The GoogleCalendarList model constructor.
+ * @property {module:model/GoogleCalendarList}
+ */
+GoogleCalendarList,
 /**
  * The InlineResponse200 model constructor.
  * @property {module:model/InlineResponse200}
