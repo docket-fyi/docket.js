@@ -93,7 +93,7 @@ Class | Method | HTTP request | Description
 *DocketJsSdk.DocumentationApi* | [**getDocs**](docs/DocumentationApi.md#getDocs) | **GET** /docs | Returns an OpenAPI 3.0 spec.
 *DocketJsSdk.GoogleApi* | [**getAllGoogleCalendarLists**](docs/GoogleApi.md#getAllGoogleCalendarLists) | **GET** /google/calendar-list | Get Google calendar lists
 *DocketJsSdk.GoogleApi* | [**getGoogleAuthTokens**](docs/GoogleApi.md#getGoogleAuthTokens) | **GET** /google/tokens | Get Google OAuth tokens
-*DocketJsSdk.GoogleApi* | [**getGoogleAuthUrl**](docs/GoogleApi.md#getGoogleAuthUrl) | **GET** /google/url | Get Google OAuth URL
+*DocketJsSdk.GoogleApi* | [**getGoogleOAuthUrl**](docs/GoogleApi.md#getGoogleOAuthUrl) | **GET** /google/oauth-url | Get Google OAuth URL
 *DocketJsSdk.I18nApi* | [**getLocale**](docs/I18nApi.md#getLocale) | **GET** /i18n/{localeCode} | 
 *DocketJsSdk.MeApi* | [**createMyEvent**](docs/MeApi.md#createMyEvent) | **POST** /me/events | Creates a new event for the current user
 *DocketJsSdk.MeApi* | [**deleteMe**](docs/MeApi.md#deleteMe) | **DELETE** /me | Deletes the current user

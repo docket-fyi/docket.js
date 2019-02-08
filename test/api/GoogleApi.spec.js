@@ -68,10 +68,10 @@
         done();
       });
     });
-    describe('getGoogleAuthUrl', function() {
-      it('should call getGoogleAuthUrl successfully', function(done) {
-        //uncomment below and update the code to test getGoogleAuthUrl
-        //instance.getGoogleAuthUrl(function(error) {
+    describe('getGoogleOAuthUrl', function() {
+      it('should call getGoogleOAuthUrl successfully', function(done) {
+        //uncomment below and update the code to test getGoogleOAuthUrl
+        //instance.getGoogleOAuthUrl(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

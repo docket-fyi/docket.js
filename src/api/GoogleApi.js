@@ -136,7 +136,7 @@ export default class GoogleApi {
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
-    getGoogleAuthUrlWithHttpInfo() {
+    getGoogleOAuthUrlWithHttpInfo() {
       let postBody = null;
 
 
@@ -149,13 +149,13 @@ export default class GoogleApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = InlineResponse2003;
 
       return this.apiClient.callApi(
-        '/google/url', 'GET',
+        '/google/oauth-url', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -166,8 +166,8 @@ export default class GoogleApi {
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
-    getGoogleAuthUrl() {
-      return this.getGoogleAuthUrlWithHttpInfo();
+    getGoogleOAuthUrl() {
+      return this.getGoogleOAuthUrlWithHttpInfo();
         /*.then(function(response_and_data) {
           return response_and_data.data;
         });*/

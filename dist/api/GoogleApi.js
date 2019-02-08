@@ -111,17 +111,17 @@ export default class GoogleApi {
    */
 
 
-  getGoogleAuthUrlWithHttpInfo() {
+  getGoogleOAuthUrlWithHttpInfo() {
     let postBody = null;
     let pathParams = {};
     let queryParams = {};
     let headerParams = {};
     let formParams = {};
-    let authNames = [];
+    let authNames = ['bearerAuth'];
     let contentTypes = ['application/json'];
     let accepts = ['application/json'];
     let returnType = InlineResponse2003;
-    return this.apiClient.callApi('/google/url', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+    return this.apiClient.callApi('/google/oauth-url', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
   }
   /**
    * Get Google OAuth URL
@@ -130,8 +130,8 @@ export default class GoogleApi {
    */
 
 
-  getGoogleAuthUrl() {
-    return this.getGoogleAuthUrlWithHttpInfo();
+  getGoogleOAuthUrl() {
+    return this.getGoogleOAuthUrlWithHttpInfo();
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/
