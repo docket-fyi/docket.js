@@ -1,6 +1,6 @@
 {
   "name": "@docket/docket.js",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "JavaScript SDK for interfacing with the Docket API",
   "license": "Unlicense",
   "main": "dist/index.js",
