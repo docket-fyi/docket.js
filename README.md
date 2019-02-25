@@ -103,6 +103,8 @@ Class | Method | HTTP request | Description
 *DocketJsSdk.MeApi* | [**getMyEvents**](docs/MeApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
 *DocketJsSdk.MeApi* | [**updateMe**](docs/MeApi.md#updateMe) | **PUT** /me | Updates the current user
 *DocketJsSdk.MeApi* | [**updateMyEventById**](docs/MeApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
+*DocketJsSdk.MicrosoftApi* | [**getMicrosoftAuthTokens**](docs/MicrosoftApi.md#getMicrosoftAuthTokens) | **GET** /microsoft/tokens | Get Microsoft OAuth tokens
+*DocketJsSdk.MicrosoftApi* | [**getMicrosoftOAuthUrl**](docs/MicrosoftApi.md#getMicrosoftOAuthUrl) | **GET** /microsoft/oauth-url | Get Microsoft OAuth URL
 *DocketJsSdk.StatusApi* | [**getHealthCheck**](docs/StatusApi.md#getHealthCheck) | **GET** /health-check | Health check
 *DocketJsSdk.UserApi* | [**confirmUser**](docs/UserApi.md#confirmUser) | **GET** /users/confirm/{code} | Confirms user&#39;s registration
 *DocketJsSdk.UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /users | Create a user
@@ -115,15 +117,18 @@ Class | Method | HTTP request | Description
  - [DocketJsSdk.AuthPostRequestBody](docs/AuthPostRequestBody.md)
  - [DocketJsSdk.Error](docs/Error.md)
  - [DocketJsSdk.Event](docs/Event.md)
+ - [DocketJsSdk.EventDiff](docs/EventDiff.md)
  - [DocketJsSdk.ForgotPasswordPostRequestBody](docs/ForgotPasswordPostRequestBody.md)
  - [DocketJsSdk.GoogleCalendar](docs/GoogleCalendar.md)
  - [DocketJsSdk.GoogleCalendarEvent](docs/GoogleCalendarEvent.md)
+ - [DocketJsSdk.GoogleCalendarEventStart](docs/GoogleCalendarEventStart.md)
  - [DocketJsSdk.GoogleCalendarList](docs/GoogleCalendarList.md)
  - [DocketJsSdk.InlineResponse200](docs/InlineResponse200.md)
  - [DocketJsSdk.InlineResponse2001](docs/InlineResponse2001.md)
  - [DocketJsSdk.InlineResponse2002](docs/InlineResponse2002.md)
  - [DocketJsSdk.InlineResponse2003](docs/InlineResponse2003.md)
  - [DocketJsSdk.InlineResponse2004](docs/InlineResponse2004.md)
+ - [DocketJsSdk.InlineResponse2005](docs/InlineResponse2005.md)
  - [DocketJsSdk.Locale](docs/Locale.md)
  - [DocketJsSdk.MeEventPutRequestBody](docs/MeEventPutRequestBody.md)
  - [DocketJsSdk.MeEventsPostRequestBody](docs/MeEventsPostRequestBody.md)

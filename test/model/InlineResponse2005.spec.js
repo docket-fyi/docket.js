@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.GoogleCalendarEvent();
+    instance = new DocketJsSdk.InlineResponse2005();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,16 @@
       object[property] = value;
   }
 
-  describe('GoogleCalendarEvent', function() {
-    it('should create an instance of GoogleCalendarEvent', function() {
-      // uncomment below and update the code to test GoogleCalendarEvent
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be.a(DocketJsSdk.GoogleCalendarEvent);
+  describe('InlineResponse2005', function() {
+    it('should create an instance of InlineResponse2005', function() {
+      // uncomment below and update the code to test InlineResponse2005
+      //var instane = new DocketJsSdk.InlineResponse2005();
+      //expect(instance).to.be.a(DocketJsSdk.InlineResponse2005);
     });
 
-    it('should have the property summary (base name: "summary")', function() {
-      // uncomment below and update the code to test the property summary
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property start (base name: "start")', function() {
-      // uncomment below and update the code to test the property start
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property end (base name: "end")', function() {
-      // uncomment below and update the code to test the property end
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
+      //var instane = new DocketJsSdk.InlineResponse2005();
       //expect(instance).to.be();
     });
 

@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property events (base name: "events")', function() {
+      // uncomment below and update the code to test the property events
+      //var instane = new DocketJsSdk.GoogleCalendarList();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

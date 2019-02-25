@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.GoogleCalendarEvent();
+    instance = new DocketJsSdk.MicrosoftApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,27 @@
       object[property] = value;
   }
 
-  describe('GoogleCalendarEvent', function() {
-    it('should create an instance of GoogleCalendarEvent', function() {
-      // uncomment below and update the code to test GoogleCalendarEvent
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be.a(DocketJsSdk.GoogleCalendarEvent);
+  describe('MicrosoftApi', function() {
+    describe('getMicrosoftAuthTokens', function() {
+      it('should call getMicrosoftAuthTokens successfully', function(done) {
+        //uncomment below and update the code to test getMicrosoftAuthTokens
+        //instance.getMicrosoftAuthTokens(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property summary (base name: "summary")', function() {
-      // uncomment below and update the code to test the property summary
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
+    describe('getMicrosoftOAuthUrl', function() {
+      it('should call getMicrosoftOAuthUrl successfully', function(done) {
+        //uncomment below and update the code to test getMicrosoftOAuthUrl
+        //instance.getMicrosoftOAuthUrl(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property start (base name: "start")', function() {
-      // uncomment below and update the code to test the property start
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property end (base name: "end")', function() {
-      // uncomment below and update the code to test the property end
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

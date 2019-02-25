@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.GoogleCalendarEvent();
+    instance = new DocketJsSdk.EventDiff();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,22 @@
       object[property] = value;
   }
 
-  describe('GoogleCalendarEvent', function() {
-    it('should create an instance of GoogleCalendarEvent', function() {
-      // uncomment below and update the code to test GoogleCalendarEvent
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be.a(DocketJsSdk.GoogleCalendarEvent);
+  describe('EventDiff', function() {
+    it('should create an instance of EventDiff', function() {
+      // uncomment below and update the code to test EventDiff
+      //var instane = new DocketJsSdk.EventDiff();
+      //expect(instance).to.be.a(DocketJsSdk.EventDiff);
     });
 
-    it('should have the property summary (base name: "summary")', function() {
-      // uncomment below and update the code to test the property summary
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
+    it('should have the property unit (base name: "unit")', function() {
+      // uncomment below and update the code to test the property unit
+      //var instane = new DocketJsSdk.EventDiff();
       //expect(instance).to.be();
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property start (base name: "start")', function() {
-      // uncomment below and update the code to test the property start
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property end (base name: "end")', function() {
-      // uncomment below and update the code to test the property end
-      //var instane = new DocketJsSdk.GoogleCalendarEvent();
+    it('should have the property value (base name: "value")', function() {
+      // uncomment below and update the code to test the property value
+      //var instane = new DocketJsSdk.EventDiff();
       //expect(instance).to.be();
     });
 

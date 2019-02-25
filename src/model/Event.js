@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import EventDiff from './EventDiff';
 
 
 
@@ -71,6 +72,9 @@ export default class Event {
             if (data.hasOwnProperty('slug')) {
                 obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
             }
+            if (data.hasOwnProperty('diff')) {
+                obj['diff'] = EventDiff.constructFromObject(data['diff']);
+            }
             if (data.hasOwnProperty('updatedAt')) {
                 obj['updatedAt'] = ApiClient.convertToType(data['updatedAt'], 'Date');
             }
@@ -102,6 +106,11 @@ export default class Event {
     * @member {String} slug
     *
     slug = undefined;
+    */
+    /**
+    * @member {module:model/EventDiff} diff
+    *
+    diff = undefined;
     */
     /**
     * @member {Date} updatedAt
@@ -181,6 +190,20 @@ export default class Event {
     */
     setSlug(slug) {
         this['slug'] = slug;
+    }
+
+    /**
+    * @return {module:model/EventDiff}
+    */
+    getDiff() {
+        return this.diff;
+    }
+
+    /**
+    * @param {module:model/EventDiff} diff
+    */
+    setDiff(diff) {
+        this['diff'] = diff;
     }
 
     /**

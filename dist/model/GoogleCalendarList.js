@@ -11,6 +11,7 @@
  *
  */
 import ApiClient from '../ApiClient';
+import GoogleCalendarEvent from './GoogleCalendarEvent';
 /**
 * The GoogleCalendarList model module.
 * @module model/GoogleCalendarList
@@ -56,6 +57,10 @@ export default class GoogleCalendarList {
       if (data.hasOwnProperty('foregroundColor')) {
         obj['foregroundColor'] = ApiClient.convertToType(data['foregroundColor'], 'String');
       }
+
+      if (data.hasOwnProperty('events')) {
+        obj['events'] = ApiClient.convertToType(data['events'], [GoogleCalendarEvent]);
+      }
     }
 
     return obj;
@@ -88,6 +93,12 @@ export default class GoogleCalendarList {
   * @member {String} foregroundColor
   *
   foregroundColor = undefined;
+  */
+
+  /**
+  * @member {Array.<module:model/GoogleCalendarEvent>} events
+  *
+  events = undefined;
   */
 
   /**
@@ -169,6 +180,22 @@ export default class GoogleCalendarList {
 
   setForegroundColor(foregroundColor) {
     this['foregroundColor'] = foregroundColor;
+  }
+  /**
+  * @return {Array.<module:model/GoogleCalendarEvent>}
+  */
+
+
+  getEvents() {
+    return this.events;
+  }
+  /**
+  * @param {Array.<module:model/GoogleCalendarEvent>} events
+  */
+
+
+  setEvents(events) {
+    this['events'] = events;
   }
 
 }

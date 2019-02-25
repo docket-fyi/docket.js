@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import GoogleCalendarEventStart from './GoogleCalendarEventStart';
 
 
 
@@ -56,14 +57,102 @@ export default class GoogleCalendarEvent {
             
             
 
+            if (data.hasOwnProperty('summary')) {
+                obj['summary'] = ApiClient.convertToType(data['summary'], 'String');
+            }
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'String');
+            }
+            if (data.hasOwnProperty('start')) {
+                obj['start'] = GoogleCalendarEventStart.constructFromObject(data['start']);
+            }
+            if (data.hasOwnProperty('end')) {
+                obj['end'] = GoogleCalendarEventStart.constructFromObject(data['end']);
+            }
         }
         return obj;
     }
 
+    /**
+    * @member {String} summary
+    *
+    summary = undefined;
+    */
+    /**
+    * @member {String} id
+    *
+    id = undefined;
+    */
+    /**
+    * @member {module:model/GoogleCalendarEventStart} start
+    *
+    start = undefined;
+    */
+    /**
+    * @member {module:model/GoogleCalendarEventStart} end
+    *
+    end = undefined;
+    */
 
 
 
 
+
+    /**
+    * @return {String}
+    */
+    getSummary() {
+        return this.summary;
+    }
+
+    /**
+    * @param {String} summary
+    */
+    setSummary(summary) {
+        this['summary'] = summary;
+    }
+
+    /**
+    * @return {String}
+    */
+    getId() {
+        return this.id;
+    }
+
+    /**
+    * @param {String} id
+    */
+    setId(id) {
+        this['id'] = id;
+    }
+
+    /**
+    * @return {module:model/GoogleCalendarEventStart}
+    */
+    getStart() {
+        return this.start;
+    }
+
+    /**
+    * @param {module:model/GoogleCalendarEventStart} start
+    */
+    setStart(start) {
+        this['start'] = start;
+    }
+
+    /**
+    * @return {module:model/GoogleCalendarEventStart}
+    */
+    getEnd() {
+        return this.end;
+    }
+
+    /**
+    * @param {module:model/GoogleCalendarEventStart} end
+    */
+    setEnd(end) {
+        this['end'] = end;
+    }
 
 
 

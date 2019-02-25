@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **timeZone** | **String** |  | [optional] 
 **backgroundColor** | **String** |  | [optional] 
 **foregroundColor** | **String** |  | [optional] 
+**events** | [**[GoogleCalendarEvent]**](GoogleCalendarEvent.md) |  | [optional] 
 
 

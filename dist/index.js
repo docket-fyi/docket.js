@@ -14,15 +14,18 @@ import ApiClient from './ApiClient';
 import AuthPostRequestBody from './model/AuthPostRequestBody';
 import Error from './model/Error';
 import Event from './model/Event';
+import EventDiff from './model/EventDiff';
 import ForgotPasswordPostRequestBody from './model/ForgotPasswordPostRequestBody';
 import GoogleCalendar from './model/GoogleCalendar';
 import GoogleCalendarEvent from './model/GoogleCalendarEvent';
+import GoogleCalendarEventStart from './model/GoogleCalendarEventStart';
 import GoogleCalendarList from './model/GoogleCalendarList';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
 import InlineResponse2003 from './model/InlineResponse2003';
 import InlineResponse2004 from './model/InlineResponse2004';
+import InlineResponse2005 from './model/InlineResponse2005';
 import Locale from './model/Locale';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
@@ -35,6 +38,7 @@ import DocumentationApi from './api/DocumentationApi';
 import GoogleApi from './api/GoogleApi';
 import I18nApi from './api/I18nApi';
 import MeApi from './api/MeApi';
+import MicrosoftApi from './api/MicrosoftApi';
 import StatusApi from './api/StatusApi';
 import UserApi from './api/UserApi';
 /**
@@ -91,6 +95,11 @@ Error,
  */
 Event,
 /**
+ * The EventDiff model constructor.
+ * @property {module:model/EventDiff}
+ */
+EventDiff,
+/**
  * The ForgotPasswordPostRequestBody model constructor.
  * @property {module:model/ForgotPasswordPostRequestBody}
  */
@@ -105,6 +114,11 @@ GoogleCalendar,
  * @property {module:model/GoogleCalendarEvent}
  */
 GoogleCalendarEvent,
+/**
+ * The GoogleCalendarEventStart model constructor.
+ * @property {module:model/GoogleCalendarEventStart}
+ */
+GoogleCalendarEventStart,
 /**
  * The GoogleCalendarList model constructor.
  * @property {module:model/GoogleCalendarList}
@@ -135,6 +149,11 @@ InlineResponse2003,
  * @property {module:model/InlineResponse2004}
  */
 InlineResponse2004,
+/**
+ * The InlineResponse2005 model constructor.
+ * @property {module:model/InlineResponse2005}
+ */
+InlineResponse2005,
 /**
  * The Locale model constructor.
  * @property {module:model/Locale}
@@ -195,6 +214,11 @@ I18nApi,
 * @property {module:api/MeApi}
 */
 MeApi,
+/**
+* The MicrosoftApi service constructor.
+* @property {module:api/MicrosoftApi}
+*/
+MicrosoftApi,
 /**
 * The StatusApi service constructor.
 * @property {module:api/StatusApi}
