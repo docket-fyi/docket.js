@@ -108,6 +108,16 @@
         done();
       });
     });
+    describe('importMyEvents', function() {
+      it('should call importMyEvents successfully', function(done) {
+        //uncomment below and update the code to test importMyEvents
+        //instance.importMyEvents(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('updateMe', function() {
       it('should call updateMe successfully', function(done) {
         //uncomment below and update the code to test updateMe

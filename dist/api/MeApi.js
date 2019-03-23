@@ -13,6 +13,7 @@
 import ApiClient from "../ApiClient";
 import Error from '../model/Error';
 import Event from '../model/Event';
+import ImportEventsMePostRequestBody from '../model/ImportEventsMePostRequestBody';
 import MeEventPutRequestBody from '../model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from '../model/MeEventsPostRequestBody';
 import MePutRequestBody from '../model/MePutRequestBody';
@@ -247,6 +248,45 @@ export default class MeApi {
 
   getMyEvents() {
     return this.getMyEventsWithHttpInfo();
+    /*.then(function(response_and_data) {
+      return response_and_data.data;
+    });*/
+  }
+  /**
+   * Imports events for the current user
+   * 
+   * @param {module:model/ImportEventsMePostRequestBody} importEventsMePostRequestBody 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
+   */
+
+
+  importMyEventsWithHttpInfo(importEventsMePostRequestBody) {
+    let postBody = importEventsMePostRequestBody; // verify the required parameter 'importEventsMePostRequestBody' is set
+
+    if (importEventsMePostRequestBody === undefined || importEventsMePostRequestBody === null) {
+      throw new Error("Missing the required parameter 'importEventsMePostRequestBody' when calling importMyEvents");
+    }
+
+    let pathParams = {};
+    let queryParams = {};
+    let headerParams = {};
+    let formParams = {};
+    let authNames = ['bearerAuth'];
+    let contentTypes = [];
+    let accepts = ['application/json'];
+    let returnType = [Event];
+    return this.apiClient.callApi('/me/events/import', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType);
+  }
+  /**
+   * Imports events for the current user
+   * 
+   * @param {module:model/ImportEventsMePostRequestBody} importEventsMePostRequestBody 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
+   */
+
+
+  importMyEvents(importEventsMePostRequestBody) {
+    return this.importMyEventsWithHttpInfo(importEventsMePostRequestBody);
     /*.then(function(response_and_data) {
       return response_and_data.data;
     });*/

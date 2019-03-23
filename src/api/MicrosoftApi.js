@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import InlineResponse2004 from '../model/InlineResponse2004';
 import InlineResponse2005 from '../model/InlineResponse2005';
+import MicrosoftCalendarList from '../model/MicrosoftCalendarList';
 
 /**
 * Microsoft service.
@@ -34,6 +35,49 @@ export default class MicrosoftApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Get Microsoft calendar lists
+     * Get Microsoft calendar lists
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/MicrosoftCalendarList>} and HTTP response
+     */
+    getAllMicrosoftCalendarListsWithHttpInfo() {
+      let postBody = null;
+
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = [MicrosoftCalendarList];
+
+      return this.apiClient.callApi(
+        '/microsoft/calendar-list', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType
+      );
+    }
+
+    /**
+     * Get Microsoft calendar lists
+     * Get Microsoft calendar lists
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/MicrosoftCalendarList>}
+     */
+    getAllMicrosoftCalendarLists() {
+      return this.getAllMicrosoftCalendarListsWithHttpInfo();
+        /*.then(function(response_and_data) {
+          return response_and_data.data;
+        });*/
+    }
 
 
     /**

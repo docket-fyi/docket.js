@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.MicrosoftApi();
+    instance = new DocketJsSdk.MicrosoftCalendarList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,37 @@
       object[property] = value;
   }
 
-  describe('MicrosoftApi', function() {
-    describe('getAllMicrosoftCalendarLists', function() {
-      it('should call getAllMicrosoftCalendarLists successfully', function(done) {
-        //uncomment below and update the code to test getAllMicrosoftCalendarLists
-        //instance.getAllMicrosoftCalendarLists(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('MicrosoftCalendarList', function() {
+    it('should create an instance of MicrosoftCalendarList', function() {
+      // uncomment below and update the code to test MicrosoftCalendarList
+      //var instane = new DocketJsSdk.MicrosoftCalendarList();
+      //expect(instance).to.be.a(DocketJsSdk.MicrosoftCalendarList);
     });
-    describe('getMicrosoftAuthTokens', function() {
-      it('should call getMicrosoftAuthTokens successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftAuthTokens
-        //instance.getMicrosoftAuthTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new DocketJsSdk.MicrosoftCalendarList();
+      //expect(instance).to.be();
     });
-    describe('getMicrosoftOAuthUrl', function() {
-      it('should call getMicrosoftOAuthUrl successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftOAuthUrl
-        //instance.getMicrosoftOAuthUrl(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new DocketJsSdk.MicrosoftCalendarList();
+      //expect(instance).to.be();
     });
+
+    it('should have the property color (base name: "color")', function() {
+      // uncomment below and update the code to test the property color
+      //var instane = new DocketJsSdk.MicrosoftCalendarList();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property events (base name: "events")', function() {
+      // uncomment below and update the code to test the property events
+      //var instane = new DocketJsSdk.MicrosoftCalendarList();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

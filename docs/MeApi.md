@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getMe**](MeApi.md#getMe) | **GET** /me | Fetches the current user
 [**getMyEventById**](MeApi.md#getMyEventById) | **GET** /me/events/{id} | Fetches a specific event for the current user
 [**getMyEvents**](MeApi.md#getMyEvents) | **GET** /me/events | Fetches all events for the current user
+[**importMyEvents**](MeApi.md#importMyEvents) | **POST** /me/events/import | Imports events for the current user
 [**updateMe**](MeApi.md#updateMe) | **PUT** /me | Updates the current user
 [**updateMyEventById**](MeApi.md#updateMyEventById) | **PUT** /me/events/{id} | Updates an event for the current user
 
@@ -282,6 +283,56 @@ apiInstance.getMyEvents().then((data) => {
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**[Event]**](Event.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="importMyEvents"></a>
+# **importMyEvents**
+> [Event] importMyEvents(importEventsMePostRequestBody)
+
+Imports events for the current user
+
+
+
+### Example
+```javascript
+import DocketJsSdk from 'docket-js-sdk';
+let defaultClient = DocketJsSdk.ApiClient.instance;
+
+// Configure API key authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocketJsSdk.MeApi();
+
+let importEventsMePostRequestBody = new DocketJsSdk.ImportEventsMePostRequestBody(); // ImportEventsMePostRequestBody | 
+
+apiInstance.importMyEvents(importEventsMePostRequestBody).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **importEventsMePostRequestBody** | [**ImportEventsMePostRequestBody**](ImportEventsMePostRequestBody.md)|  | 
 
 ### Return type
 

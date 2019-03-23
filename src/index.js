@@ -22,6 +22,7 @@ import GoogleCalendar from './model/GoogleCalendar';
 import GoogleCalendarEvent from './model/GoogleCalendarEvent';
 import GoogleCalendarEventStart from './model/GoogleCalendarEventStart';
 import GoogleCalendarList from './model/GoogleCalendarList';
+import ImportEventsMePostRequestBody from './model/ImportEventsMePostRequestBody';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
@@ -32,6 +33,9 @@ import Locale from './model/Locale';
 import MeEventPutRequestBody from './model/MeEventPutRequestBody';
 import MeEventsPostRequestBody from './model/MeEventsPostRequestBody';
 import MePutRequestBody from './model/MePutRequestBody';
+import MicrosoftCalendarEvent from './model/MicrosoftCalendarEvent';
+import MicrosoftCalendarEventStart from './model/MicrosoftCalendarEventStart';
+import MicrosoftCalendarList from './model/MicrosoftCalendarList';
 import ResetPasswordPostRequestBody from './model/ResetPasswordPostRequestBody';
 import User from './model/User';
 import UsersPostRequestBody from './model/UsersPostRequestBody';
@@ -138,6 +142,12 @@ export {
     GoogleCalendarList,
 
     /**
+     * The ImportEventsMePostRequestBody model constructor.
+     * @property {module:model/ImportEventsMePostRequestBody}
+     */
+    ImportEventsMePostRequestBody,
+
+    /**
      * The InlineResponse200 model constructor.
      * @property {module:model/InlineResponse200}
      */
@@ -196,6 +206,24 @@ export {
      * @property {module:model/MePutRequestBody}
      */
     MePutRequestBody,
+
+    /**
+     * The MicrosoftCalendarEvent model constructor.
+     * @property {module:model/MicrosoftCalendarEvent}
+     */
+    MicrosoftCalendarEvent,
+
+    /**
+     * The MicrosoftCalendarEventStart model constructor.
+     * @property {module:model/MicrosoftCalendarEventStart}
+     */
+    MicrosoftCalendarEventStart,
+
+    /**
+     * The MicrosoftCalendarList model constructor.
+     * @property {module:model/MicrosoftCalendarList}
+     */
+    MicrosoftCalendarList,
 
     /**
      * The ResetPasswordPostRequestBody model constructor.

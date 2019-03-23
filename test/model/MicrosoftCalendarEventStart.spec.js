@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.MicrosoftApi();
+    instance = new DocketJsSdk.MicrosoftCalendarEventStart();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,25 @@
       object[property] = value;
   }
 
-  describe('MicrosoftApi', function() {
-    describe('getAllMicrosoftCalendarLists', function() {
-      it('should call getAllMicrosoftCalendarLists successfully', function(done) {
-        //uncomment below and update the code to test getAllMicrosoftCalendarLists
-        //instance.getAllMicrosoftCalendarLists(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('MicrosoftCalendarEventStart', function() {
+    it('should create an instance of MicrosoftCalendarEventStart', function() {
+      // uncomment below and update the code to test MicrosoftCalendarEventStart
+      //var instane = new DocketJsSdk.MicrosoftCalendarEventStart();
+      //expect(instance).to.be.a(DocketJsSdk.MicrosoftCalendarEventStart);
     });
-    describe('getMicrosoftAuthTokens', function() {
-      it('should call getMicrosoftAuthTokens successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftAuthTokens
-        //instance.getMicrosoftAuthTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property dateTime (base name: "dateTime")', function() {
+      // uncomment below and update the code to test the property dateTime
+      //var instane = new DocketJsSdk.MicrosoftCalendarEventStart();
+      //expect(instance).to.be();
     });
-    describe('getMicrosoftOAuthUrl', function() {
-      it('should call getMicrosoftOAuthUrl successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftOAuthUrl
-        //instance.getMicrosoftOAuthUrl(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property timeZone (base name: "timeZone")', function() {
+      // uncomment below and update the code to test the property timeZone
+      //var instane = new DocketJsSdk.MicrosoftCalendarEventStart();
+      //expect(instance).to.be();
     });
+
   });
 
 }));

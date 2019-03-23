@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocketJsSdk.MicrosoftApi();
+    instance = new DocketJsSdk.ImportEventsMePostRequestBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,19 @@
       object[property] = value;
   }
 
-  describe('MicrosoftApi', function() {
-    describe('getAllMicrosoftCalendarLists', function() {
-      it('should call getAllMicrosoftCalendarLists successfully', function(done) {
-        //uncomment below and update the code to test getAllMicrosoftCalendarLists
-        //instance.getAllMicrosoftCalendarLists(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('ImportEventsMePostRequestBody', function() {
+    it('should create an instance of ImportEventsMePostRequestBody', function() {
+      // uncomment below and update the code to test ImportEventsMePostRequestBody
+      //var instane = new DocketJsSdk.ImportEventsMePostRequestBody();
+      //expect(instance).to.be.a(DocketJsSdk.ImportEventsMePostRequestBody);
     });
-    describe('getMicrosoftAuthTokens', function() {
-      it('should call getMicrosoftAuthTokens successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftAuthTokens
-        //instance.getMicrosoftAuthTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property events (base name: "events")', function() {
+      // uncomment below and update the code to test the property events
+      //var instane = new DocketJsSdk.ImportEventsMePostRequestBody();
+      //expect(instance).to.be();
     });
-    describe('getMicrosoftOAuthUrl', function() {
-      it('should call getMicrosoftOAuthUrl successfully', function(done) {
-        //uncomment below and update the code to test getMicrosoftOAuthUrl
-        //instance.getMicrosoftOAuthUrl(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));
