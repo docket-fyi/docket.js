@@ -5,7 +5,9 @@
   "license": "Unlicense",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --require babel-core/register --recursive"
+    "test": "mocha --require babel-core/register --recursive",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browser": {
     "fs": false
@@ -13,7 +15,8 @@
   "dependencies": {
     "babel": "6.23.0",
     "babel-cli": "6.26.0",
-    "superagent": "4.1.0"
+    "superagent": "4.1.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
@@ -22,5 +25,6 @@
     "expect.js": "0.3.1",
     "mocha": "6.0.1",
     "sinon": "7.2.5"
-  }
+  },
+  "snyk": true
 }
