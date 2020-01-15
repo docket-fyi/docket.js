@@ -1,8 +1,11 @@
-# DocketJsSdk.InlineResponse200
+# DocketJs.InlineResponse200
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**jwt** | **String** |  | [optional] 
+**meta** | [**Object**](.md) |  | [optional] 
+**links** | [**InlineResponse200Links**](InlineResponse200Links.md) |  | [optional] 
+**data** | [**InlineResponse200Data**](InlineResponse200Data.md) |  | [optional] 
 
 

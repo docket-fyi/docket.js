@@ -1,13 +1,19 @@
-# DocketJsSdk.User
+# DocketJs.User
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**createdAt** | **Date** |  | [optional] 
-**email** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**uuid** | **String** |  | [optional] 
 **firstName** | **String** |  | [optional] 
 **lastName** | **String** |  | [optional] 
-**updatedAt** | **Date** |  | [optional] 
+**initials** | **String** |  | [optional] 
+**email** | **String** |  | [optional] 
+**preferredMeasurementUnit** | **String** |  | [optional] 
+**isPremium** | **Boolean** |  | [optional] 
+**confirmedAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
+**deletedAt** | **String** |  | [optional] 
 
 

@@ -1,8 +1,10 @@
-# DocketJsSdk.InlineResponse2005
+# DocketJs.InlineResponse2005
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**url** | **String** |  | [optional] 
+**data** | [**InlineResponse2005Data**](InlineResponse2005Data.md) |  | [optional] 
+**links** | [**InlineResponse200Links**](InlineResponse200Links.md) |  | [optional] 
 
 

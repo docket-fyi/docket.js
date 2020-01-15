@@ -1,8 +1,10 @@
-# DocketJsSdk.InlineResponse2001
+# DocketJs.InlineResponse2001
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**success** | **Boolean** |  | [optional] 
+**data** | [**InlineResponse2001Data**](InlineResponse2001Data.md) |  | [optional] 
+**links** | [**InlineResponse200Links**](InlineResponse200Links.md) |  | [optional] 
 
 

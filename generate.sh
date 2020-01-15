@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 CURRENT_VERSION=$(docker run -i --rm stedolan/jq < package.json '.version')
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -24,7 +24,7 @@ docker run \
   --network=docket-api_default \
   --rm \
   --volume ${PWD}:/local \
-  openapitools/openapi-generator-cli \
+  openapitools/openapi-generator-cli:latest \
   generate \
     -i http://docket-api:3001/v1/docs \
     -g javascript \
@@ -36,12 +36,12 @@ printf "\n⏱  Updating package.json 'version' property...\n"
 docker run -i -e CURRENT_VERSION=$CURRENT_VERSION --rm stedolan/jq < package.json ".version = $CURRENT_VERSION" > package.tmp.json && mv package.tmp.json package.json
 printf "✅ Done."
 
-printf "\n⏱  Transpiling via Babel...\n"
-docker run -v ${PWD}:/local --rm -it $(docker build -q .) babel /local/src -d /local/dist
-printf "✅ Done."
+# printf "\n⏱  Transpiling via Babel...\n"
+# docker run -v ${PWD}:/local --rm -it $(docker build -q .) babel /local/src -d /local/dist
+# printf "✅ Done."
 
 printf "\n⏱  Updating package.json 'main' and 'name' properties...\n"
-docker run -i --rm stedolan/jq < ./package.json '.main = "dist/index.js" | .name = "@docket/docket.js"' > package.tmp.json && mv package.tmp.json package.json
+docker run -i --rm stedolan/jq < ./package.json '.main = "src/index.js" | .name = "@docket/docket.js"' > package.tmp.json && mv package.tmp.json package.json
 printf "✅ Done."
 
 printf "\n🎗  Reminder:\n"

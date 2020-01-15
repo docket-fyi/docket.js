@@ -1,14 +1,17 @@
-# DocketJsSdk.Event
+# DocketJs.Event
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**createdAt** | **Date** |  | [optional] 
-**_date** | **Date** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**uuid** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
 **slug** | **String** |  | [optional] 
-**diff** | [**EventDiff**](EventDiff.md) |  | [optional] 
-**updatedAt** | **Date** |  | [optional] 
+**_date** | **String** |  | [optional] 
+**userId** | **String** |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
+**deletedAt** | **String** |  | [optional] 
 
 
