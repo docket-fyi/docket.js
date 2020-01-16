@@ -32,16 +32,16 @@ docker run \
     --additional-properties usePromises=true,useES6=true,emitModelMethods=true,projectName='docket.js',projectDescription='JavaScript SDK for interfacing with the Docket API'
 printf "✅ Done."
 
-printf "\n⏱  Updating package.json 'version' property...\n"
+printf "\n⏱  Restoring package.json 'version' property...\n"
 docker run -i -e CURRENT_VERSION=$CURRENT_VERSION --rm stedolan/jq < package.json ".version = $CURRENT_VERSION" > package.tmp.json && mv package.tmp.json package.json
 printf "✅ Done."
 
-# printf "\n⏱  Transpiling via Babel...\n"
-# docker run -v ${PWD}:/local --rm -it $(docker build -q .) babel /local/src -d /local/dist
-# printf "✅ Done."
+printf "\n⏱  Transpiling via Babel...\n"
+docker run -v ${PWD}:/local --rm -it $(docker build -q .) babel /local/src -d /local/dist
+printf "✅ Done."
 
 printf "\n⏱  Updating package.json 'main' and 'name' properties...\n"
-docker run -i --rm stedolan/jq < ./package.json '.main = "src/index.js" | .name = "@docket/docket.js"' > package.tmp.json && mv package.tmp.json package.json
+docker run -i --rm stedolan/jq < ./package.json '.main = "dist/index.js" | .name = "@docket/docket.js"' > package.tmp.json && mv package.tmp.json package.json
 printf "✅ Done."
 
 printf "\n🎗  Reminder:\n"

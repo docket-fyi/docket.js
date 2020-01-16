@@ -3,7 +3,7 @@
   "version": "0.19.0",
   "description": "JavaScript SDK for interfacing with the Docket API",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
     "prepack": "npm run build",
