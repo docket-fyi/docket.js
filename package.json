@@ -35,7 +35,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-syntax-import-meta": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
-    "@babel/register": "^7.0.0",
+    "@babel/register": "^7.8.6",
     "expect.js": "^0.3.1",
     "mocha": "^5.2.0",
     "sinon": "^7.2.0"
